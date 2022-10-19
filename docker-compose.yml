@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  ciapp:
+    build: ./
+    volumes: 
+      - ./ciapp:/var/www/html/
+    restart: always
+    ports:
+      - "8000:80"
+
+volumes:
+    db_data:
