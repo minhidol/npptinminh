@@ -1569,10 +1569,16 @@ class Order extends MY_Controller
     {
         $order = $this->input->json();
         $this->load->model('order_detail_model', 'order_detail');
-
+        //echo json_encode($order);
+        $order_detail = $order->orders;
+        $total = 0;
+        foreach($order_detail as $detail_temp){
+            $total += (int)$detail_temp->price * (int)$detail_temp->quantity;
+        }
+        //echo json_encode(['total' => $total]);
         $this->order->update([
             'customer_id' => $order->customer_id,
-            'total_price' => $order->total_price,
+            'total_price' => $total,
             'note' => $order->note,
             'saler' => $order->saler
         ], ['id' => $order->id]);
@@ -1659,7 +1665,13 @@ class Order extends MY_Controller
             $this->load->model('ProductUnitModel');
             $this->load->model('Debits_model', 'Debit');
             foreach ($orders as $key => &$order) {
+                $total = 0;
                 $order['detail'] = $this->order_detail->get_array(array('order_id' => $order['id']));
+                //echo json_encode($order['detail']);
+                foreach($order['detail'] as $detail_price){
+                    $total += (int)$detail_price->price * (int)$detail_price->quantity;
+                }
+                $order['total_price'] = $total;
                 $promotions = $this->Promotion->get_array(['order_id' => $order['id']]);
                 $totalPromotionValue = 0;
                 $groupedPros = [];

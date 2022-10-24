@@ -216,18 +216,19 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 $scope.order.saler = $scope.selectedUser;
                 var url = config.base;
                 url += ($scope.currentId == undefined) ? '/order/addOrder' : '/order/update';
+               //console.log('body: ', $scope.order);
                 $http({
                     method: 'POST',
                     url: url,
                     data: $scope.order,
                     responseType: 'json'
                 }).success(function (data, status) {
+                    //console.log('data: ', data);
                     showAlert.showSuccess(3000, 'Lưu thành công');
                     if ( $scope.currentId ) {
                         setTimeout(function(){
                             window.location.href = config.base + '/dashboard#order-list';
                         }, 1000);
-
                     } else {
                         $scope.init();
                         $('#select-customer').val("");
@@ -240,6 +241,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                     console.log(data);
                     $scope.saveprocessing = false;
                 });
+                $scope.saveprocessing = false;
             };
 
             $scope.checkPromotion = function () {
@@ -1429,6 +1431,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 url: config.base + '/order/getOrderByShipment?i=' + shipment_id + '&d=1',
                 responseType: 'json'
             }).success(function (data, status) {
+                $scope.printData = [];
                 $scope.printData = data;
                 //console.log('shipment: ', $scope.shipments);
                 var currentshipment = null;
@@ -1449,7 +1452,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         }
                     }
                 }
-                console.log($scope.printData)
+                //console.log($scope.printData)
                 setTimeout(function () {
                     processPrinting();
                     $("body").css("cursor", "default");

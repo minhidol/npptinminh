@@ -129,25 +129,34 @@ class Products extends MY_Controller
     {
         $id = $_GET['id'];
         $product = $this->input->json();
-
+        //echo json_encode($product);
         $list_price = $product->list_price;
+        foreach ($list_price as $key => $value) {
+            if(!isset($value->unit) || $value->unit == null || $value->unit == ''){
+                //echo json_encode(['error' => 'Không tồn tại quy cách']);
+                // break;
+                return;
+            }
+        }
         unset($product->list_price);
         $this->product->update($product, ['id' => $id]);
         $this->product_sale->delete(['product_id' => $id]);
         $sale_id = null;
-
         foreach ($list_price as $key => $value) {
-            $sale_detail = [
-                'product_id' => $id,
-                'parent_id' => $sale_id,
-                'price' => str_replace(',', '', $value->price),
-                'name' => $value->name,
-                'unit' => $value->unit,
-                'quantity' => $value->quantity
-            ];
-            $sale_id = $this->product_sale->insert($sale_detail);
+           
+                $sale_detail = [
+                    'product_id' => $id,
+                    'parent_id' => $sale_id,
+                    'price' => str_replace(',', '', $value->price),
+                    'name' => $value->name,
+                    'unit' => $value->unit,
+                    'quantity' => $value->quantity
+                ];
+                $sale_id = $this->product_sale->insert($sale_detail);
+            
         }
-        //update unit for buy price, warehouse-wholesale, warehouse-retail
+        
+        // //update unit for buy price, warehouse-wholesale, warehouse-retail
         $this->load->model('products_buy_price_model');
         $this->load->model('warehouse_retail_model');
         $this->load->model('warehouse_wholesale_model');
