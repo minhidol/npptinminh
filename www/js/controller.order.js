@@ -4,6 +4,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
         function ($scope, $http, $location, showAlert, renderSelect, $filter, productService, $timeout) {
             $scope.selectingorderproducts = [];
             $scope.init = function () {
+                console.log('init: ');
                 $scope.currentId = $location.search().i;
                 $scope.lstOrderProduct = [];
                 $scope.totalQuantity = 0;
@@ -11,6 +12,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 $scope.currentUserDebit = 0;
                 $scope.saveprocessing = false;
                 $scope.addMoreProcessing = 0;
+                $scope.isLoadedCustomer = false;
                 var d = new Date();
                 $scope.currentDate = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
                 setDefaultValue();
@@ -28,8 +30,9 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 });
                 $http.get(config.base + '/staff/getAll').then(function (response) {
                     $scope.lstUser = response.data.user;
+                    $scope.isLoadedCustomer = true;
                     $timeout(function () {
-                        $("#select-user").selectpicker();
+                        $("#select-user").selectpicker('refresh');
                     })
                 });
                 var objGetProducts = productService.getProducts();
@@ -69,12 +72,12 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             })
                         });
 
-                        $("#select-user").on("changed.bs.select", function() {
-                            setTimeout(function (){
-                                $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
-                            })
+                        // $("#select-user").on("changed.bs.select", function() {
+                        //     setTimeout(function (){
+                        //         $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
+                        //     })
 
-                        });
+                        // });
                     })
                 });
 

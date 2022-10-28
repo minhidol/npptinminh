@@ -1,0 +1,2 @@
+CUSTOM - 2022-10-28 09:34:30 --> Order::addOrder - /index.php/order/addOrder: {"note":"","lstProId":[],"orders":[{"product_id":"5","cost":null,"unit":"","price":105000,"quantity":13,"total":"5"}],"total_price":1365000,"customer_id":"11","saler":"4"}
+CUSTOM - 2022-10-28 09:34:48 --> Order::addOrder - /index.php/order/addOrder: {"note":"","lstProId":[],"orders":[{"product_id":"8","cost":null,"unit":"","price":85000,"quantity":13,"total":"8"}],"total_price":1105000,"customer_id":"3","saler":"10"}

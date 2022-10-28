@@ -535,6 +535,7 @@ class Order extends MY_Controller
         $shipments = array_filter($shipments, function ($value) {
             return count($value->orders) > 0;
         });
+        //echo json_encode(['data143' => $shipments]);
         $this->load->model('PromotionDetail', 'Promotion');
         $this->Promotion->__set('table_name', 'promotion_order_view');
         $this->load->model('Debits_model', 'Debit');

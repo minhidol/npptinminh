@@ -21,7 +21,9 @@
 
                     <div class="col-sm-12 col-md-6">
                         <label>Chọn saler</label>
-                        <select class="form-control selectpicker" data-live-search="true" ng-model="selectedUser" id="select-user"
+                        <select class="form-control selectpicker" data-live-search="true" 
+                                *ngIf="isLoadedCustomer"
+                                ng-model="selectedUser" id="select-user"
                                 ng-options="user.id as user.name for user in lstUser" tabindex="2">
                             <option style="display:none" value="">-- Chọn Saler --</option>
                         </select>
