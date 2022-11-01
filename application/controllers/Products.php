@@ -143,7 +143,6 @@ class Products extends MY_Controller
         $this->product_sale->delete(['product_id' => $id]);
         $sale_id = null;
         foreach ($list_price as $key => $value) {
-           
                 $sale_detail = [
                     'product_id' => $id,
                     'parent_id' => $sale_id,
@@ -153,19 +152,23 @@ class Products extends MY_Controller
                     'quantity' => $value->quantity
                 ];
                 $sale_id = $this->product_sale->insert($sale_detail);
-            
         }
         
         // //update unit for buy price, warehouse-wholesale, warehouse-retail
         $this->load->model('products_buy_price_model');
         $this->load->model('warehouse_retail_model');
         $this->load->model('warehouse_wholesale_model');
+        $this->load->model('check_use_trigger_model');
+        $this->load->model('Warehouses_model', 'warehouse');
         $unit_primay = $this->product_sale->get_unit_primary($id);
         $unit_retail = $this->product_sale->get_unit_retail($id);
         $this->products_buy_price_model->update(['unit' => $unit_primay->id], ['product_id' => $id, 'warehouse' => 'wholesale']);
         $this->products_buy_price_model->update(['unit' => $unit_retail->id], ['product_id' => $id, 'warehouse' => 'retail']);
         $this->warehouse_retail_model->update(['unit' => $unit_retail->id], ['product_id' => $id]);
-        $this->warehouse_wholesale_model->update(['unit' => $unit_primay->id], ['product_id' => $id]);
+        $this->check_use_trigger_model->update(['content_update' => 'update_unit'], ['table_name' => 'warehouse_wholesale']);
+        $table = $this->warehouse_wholesale_model->update(['unit' => $unit_primay->id], ['product_id' => $id]);
+        $this->db->query('call update_date_inventory_not_trigger()');
+        $this->check_use_trigger_model->update(['content_update' => ''], ['table_name' => 'warehouse_wholesale']);
     }
 
     public function getAllWithUnit()

@@ -4,7 +4,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
         function ($scope, $http, $location, showAlert, renderSelect, $filter, productService, $timeout) {
             $scope.selectingorderproducts = [];
             $scope.init = function () {
-                console.log('init: ');
+                console.log('init7: ');
                 $scope.currentId = $location.search().i;
                 $scope.lstOrderProduct = [];
                 $scope.totalQuantity = 0;
@@ -72,12 +72,12 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             })
                         });
 
-                        // $("#select-user").on("changed.bs.select", function() {
-                        //     setTimeout(function (){
-                        //         $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
-                        //     })
+                        $("#select-user").on("changed.bs.select", function() {
+                            setTimeout(function (){
+                                $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
+                            })
 
-                        // });
+                        });
                     })
                 });
 
@@ -113,6 +113,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 popupWin.document.close();
             }
             $scope.selectCustomer = function () {
+                console.log('select');
                 if ($scope.selectedCus) {
                     $scope.currentCustomer = setCustomer();
                     if($scope.selectedCus) {
@@ -239,6 +240,33 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         $('#select-user').val("");
                         $('#select-user').selectpicker("refresh");
                         $scope.saveprocessing = false;
+                        $timeout(function () {
+                            $(".selectpicker").selectpicker();
+                            // $(".selectpicker").focus(function(){
+                            //     $(this).selectpicker('toggle');
+                            // });
+    
+                            $('.selectpicker').on("shown.bs.select", function() {
+                                $(this).parent().find(".bs-searchbox input").focus();
+                            });
+    
+                            $('.list_order_product .product_order:last-child .selectpicker').on("changed.bs.select", function() {
+                                $(this).parents('tr').find("td:nth-child(2) input").focus();
+                            });
+    
+                            $("#select-customer").on("changed.bs.select", function() {
+                                setTimeout(function (){
+                                    $("#select-user").selectpicker('toggle');
+                                })
+                            });
+    
+                            $("#select-user").on("changed.bs.select", function() {
+                                setTimeout(function (){
+                                    $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
+                                })
+    
+                            });
+                        })
                     }
                 }).error(function (data, status) {
                     console.log(data);
@@ -834,10 +862,32 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         $scope.init()
                 })
             }
-            $scope.divideProduct = function (shouldReload) {
-                $scope.saveOrder();
-                $http.post(config.base + '/order/updateWarehouse?ship_id=' + $stateParams.shipment_id, $scope.shipment)
+            $scope.saveOrderForDivideProduct = function(){
+                const arrNotValid = [];
+                $.each($scope.productList.detail, function(i, value){
+                    if(value.total_quantity > value.inventory){
+                        arrNotValid.push(value.product_name)
+                    }
+                });
+                if(arrNotValid.length > 0){
+                    const messError = `Các mặt hàng sau không đủ hàng tồn kho: ${arrNotValid.join(', ')}. Vui lòng kiểm tra lại.`;
+                    showMessage('error', messError);
+                    return 0;
+                }
+                var postData = $scope.preparePostData();
+                $http.post(config.base + '/order/saveDevided', postData)
                     .success(function (data, status) {
+                        showAlert.showSuccess(3000, 'Lưu thành công');
+                    });
+
+            }
+            $scope.divideProduct = function (shouldReload) {
+                const checkInventory = $scope.saveOrderForDivideProduct ();
+                if(checkInventory == 0)
+                    return;
+                    $http.post(config.base + '/order/updateWarehouse?ship_id=' + $stateParams.shipment_id, $scope.shipment)
+                    .success(function (data, status) {
+                        console.log('done')
                         showAlert.showSuccess(3000, 'Lưu thành công');
                         if (shouldReload) {
                             setTimeout(function () {
@@ -847,6 +897,8 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             $location.path('order-management');
                         }
                     })
+    
+               
             };
 
             $scope.productQuantityChange = function (orderIndex, proIndex) {

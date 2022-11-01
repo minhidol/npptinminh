@@ -235,13 +235,14 @@ angular.module('dashboard.controllers', ['ui.bootstrap'])
             }
             $(el.currentTarget).find('[type=submit]').attr('value', 'loading...');
             //console.log('url: ', $scope.urlSave);
+            console.log('product: ', $scope.product);
             $http({
                 method: 'post',
                 url: $scope.urlSave,
                 data: product,
                 responseType: 'json'
             }).success(function (data, status) {
-                //console.log('data: ', data);
+                console.log('data3: ', data);
                 showAlert.showSuccess(3000, 'Lưu thành công');
                 $scope.activeSaveProduct = true;
                 $(el.currentTarget).find('[type=submit]').attr('value', 'Save')
@@ -2175,7 +2176,7 @@ angular.module('dashboard.controllers', ['ui.bootstrap'])
             })
             $scope.customer.phone_home = phone_home;
             $scope.customer.phone_mobile = phone_mobile;
-
+            //console.log('customer: ', $scope.customer)
             $http({
                 method: 'POST',
                 url: url,
