@@ -1,0 +1,654 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202109 will be lost/reset.
+# Last config file used to build this data file was /home/npptinmi/tmp/awstats/ssl/awstats.npptinminh.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2015                
+POS_TIME 2696                
+POS_VISITOR 10874               
+POS_DAY 14457               
+POS_DOMAIN 3549                
+POS_LOGIN 3956                
+POS_ROBOT 4111                
+POS_WORMS 4530                
+POS_EMAILSENDER 4661                
+POS_EMAILRECEIVER 4804                
+POS_SESSION 15336               
+POS_SIDER 15546               
+POS_FILETYPES 4939                
+POS_DOWNLOADS 5204                
+POS_OS 5252                
+POS_BROWSER 5521                
+POS_SCREENSIZE 6339                
+POS_UNKNOWNREFERER 6413                
+POS_UNKNOWNREFERERBROWSER 6687                
+POS_ORIGIN 6898                
+POS_SEREFERRALS 7040                
+POS_PAGEREFS 7206                
+POS_SEARCHWORDS 7427                
+POS_KEYWORDS 7579                
+POS_MISC 2360                
+POS_ERRORS 7638                
+POS_CLUSTER 3812                
+POS_SIDER_404 7782                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20211001013449 341 89546 8600934844455
+FirstTime 20210901002806
+LastTime 20210930203359
+LastUpdate 20211001205339 341 0 340 0 0
+TotalVisits 200                 
+TotalUnique 86                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 91                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+AddToFavourites 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+TotalMisc 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 252 254 1180621 46 70 250933
+1 11 59 412184 27 28 23189
+2 0 0 0 22 22 23321
+3 0 2 2949 29 29 66037
+4 4 4 30031 12 20 107896
+5 0 0 0 4 5 2613
+6 30 31 158568 4 11 11748
+7 289 289 1467723 8 29 21106
+8 1267 1583 8497064 40 107 72979
+9 1666 2240 12550053 63 188 663374
+10 1990 2225 14976621 36 114 83388
+11 1798 1988 11871519 18 85 70626
+12 1897 2131 12711033 38 111 93400
+13 1404 1513 8017830 33 117 83025
+14 820 1243 5596002 37 102 60725
+15 1929 3132 14415667 63 174 110036
+16 1895 2794 14828663 21 85 66989
+17 1331 1497 6751568 27 82 104695
+18 957 1178 4851306 19 81 163778
+19 880 945 5353660 66 102 44582
+20 801 805 4766515 28 63 60700
+21 132 132 694889 11 17 16087
+22 270 272 2116879 6 17 11245
+23 70 88 643471 38 58 146985
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 14
+vn 19595 24182 130661429
+us 55 85 473172
+gr 8 8 30872
+cn 7 7 46003
+de 7 7 34069
+se 5 5 6730
+in 4 57 276979
+ru 3 3 6710
+ca 2 2 2692
+sc 2 2 2692
+gb 2 44 338742
+at 1 1 12234
+hn 1 1 1346
+ro 1 1 1146
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 8
+no_user_agent 69 8436 20210930122732 0
+Googlebot/ 40 324911 20210928155439 0
+spider 18 201724 20210915000707 0
+bingbot/ 11 110744 20210928094816 0
+bingpreview 11 443077 20210928101857 0
+unknown 8 208 20210925011136 8
+Python\-urllib/ 2 75896 20210920173708 0
+curl 1 4218 20210904091849 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 10
+css 867 2790101 0 0
+woff2 16 216336 0 0
+php 2 24464 0 0
+env 5 61165 0 0
+Unknown 19000 112064193 0 0
+html 670 1469987 0 0
+jpg 212 2874231 0 0
+js 1917 8550186 0 0
+png 1617 3705301 0 0
+gif 99 138852 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 14
+ios_iphone 191 38
+Unknown 33 15
+winxp 3 3
+linux 82 34
+win8.1 1 1
+macosx15 6 6
+macosx13 5 5
+androidnougat 1 1
+ios_ipad 19 1
+win7 26 20
+linuxubuntu 3 3
+win10 23974 19547
+androidmarshmallow 36 18
+win8 25 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 37
+chrome90.0.4430.85 1 1
+chrome54.0.2840.99 1 1
+firefox77.0 2 2
+firefox62.0 2 2
+msie11.0 1 1
+Unknown 13 13
+firefox72.0 1 1
+chrome89.0.4472.114 1 1
+msie6.0 2 2
+firefox73.0 1 1
+chrome93.0.4577.63 5682 5274
+firefox81.0 2 2
+chrome71.0.3563.0 25 1
+chrome41.0.2227.0 1 1
+safari14.1 1 1
+safari 210 39
+chrome92.0.4515.159 675 663
+chrome94.0.4606.61 2172 2164
+firefox91.0 1143 322
+chrome81.0.4044.129 8 8
+chrome66.0.3359.170 12 12
+chrome91.0.4472.114 5 5
+chrome79.0.3945.130 3 3
+chrome78.0.3904.108 2 2
+chrome80.0.3987.132 25 1
+msie7.0 25 1
+chrome74.0.3729.169 2 2
+chrome94.0.4606.54 549 465
+chrome86.0.4240.75 1 1
+chrome83.0.4103.97 19 19
+firefox84.0 4 4
+mozilla 21 3
+chrome79.0.3945.88 1 1
+chrome93.0.4577.82 9348 9063
+firefox92.0 4434 1607
+chrome42.0.2311.90 3 3
+msie9.0 7 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+GRequests/0.10 20210925102647
+Go_http_package 20210928070150
+Mozilla/5.0_(compatible;_Dataprovider.com) 20210924232205
+python-requests/2.22.0 20210924041449
+ALittle_Client 20210920191602
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+python-requests/2.22.0 20210924041449
+ALittle_Client 20210920191602
+GRequests/0.10 20210925102647
+Go_http_package 20210928070150
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 293 299
+From1 0 0
+From2 3 3
+From3 4 4
+From4 19393 24099
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+www_google_com_hk 3 3
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://webmail.npptinminh.com/wp-login.php 2 2
+https://112.213.89.32 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+302 2 0
+403 73 89717
+401 39 1722
+307 355 0
+404 889 1098804
+303 11 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 67
+/index.php/login/2019/wp-includes/wlwmanifest.xml 2 -
+/uploads/ 4 binance.com
+/include/fckeditor/editor/filemanager/connectors/test.html 1 -
+//wp/wp-includes/wlwmanifest.xml 1 -
+//site/wp-includes/wlwmanifest.xml 1 -
+/img/inner-shadow.png 686 https://www.npptinminh.com/www/css/dataTables.css
+//cms/wp-includes/wlwmanifest.xml 1 -
+/wp-content/ 1 -
+/humans.txt 6 http://npptinminh.com/humans.txt
+//web/wp-includes/wlwmanifest.xml 1 -
+/index.php/login/wp-includes/wlwmanifest.xml 7 -
+/sitemap.xml 1 -
+/index.php/login/news/wp-includes/wlwmanifest.xml 2 -
+/index.php/login/web/wp-includes/wlwmanifest.xml 1 -
+/fckeditor/editor/filemanager/connectors/test.html 1 -
+/index.php/login/shop/wp-includes/wlwmanifest.xml 1 -
+//xmlrpc.php 1 -
+/pass.php 1 -
+/wp-login.php 41 http://npptinminh.com/wp-login.php
+/index.php/login/site/wp-includes/wlwmanifest.xml 2 -
+//wp2/wp-includes/wlwmanifest.xml 1 -
+//shop/wp-includes/wlwmanifest.xml 1 -
+/index.php/login/test/wp-includes/wlwmanifest.xml 2 -
+//website/wp-includes/wlwmanifest.xml 1 -
+/FCKeditor/editor/filemanager/connectors/test.html 1 -
+/index.php/login/wp1/wp-includes/wlwmanifest.xml 2 -
+/admin/fckeditor/editor/filemanager/connectors/test.html 1 -
+/ads.txt 6 http://npptinminh.com/ads.txt
+/js/fckeditor/editor/filemanager/connectors/test.html 1 -
+//wp1/wp-includes/wlwmanifest.xml 1 -
+/index.php/login/wp2/wp-includes/wlwmanifest.xml 2 -
+/sites/default/files/ 4 binance.com
+//blog/wp-includes/wlwmanifest.xml 1 -
+/downloader 1 -
+/emergency.php 1 -
+//test/wp-includes/wlwmanifest.xml 1 -
+/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/test.html 1 -
+/.env 2 -
+/app/.env 1 -
+/images/ 4 binance.com
+/login 1 -
+/index.php/login/website/wp-includes/wlwmanifest.xml 2 -
+//2019/wp-includes/wlwmanifest.xml 1 -
+/files/ 4 binance.com
+/www/img/avatar_staff/%7B%7Bstaff.avatar%7D%7D 1 https://www.npptinminh.com/index.php/dashboard
+/index.php/login/2018/wp-includes/wlwmanifest.xml 2 -
+//news/wp-includes/wlwmanifest.xml 1 -
+/.well-known/ 4 binance.com
+/index.php/login/xmlrpc.php 1 -
+/index.php/login/wordpress/wp-includes/wlwmanifest.xml 2 -
+//sito/wp-includes/wlwmanifest.xml 1 -
+//wordpress/wp-includes/wlwmanifest.xml 1 -
+/index.php/login/wp/wp-includes/wlwmanifest.xml 1 -
+/dup-installer/main.installer.php 1 -
+/index.php/login/sito/wp-includes/wlwmanifest.xml 2 -
+/index.php/login/blog/wp-includes/wlwmanifest.xml 2 -
+//wp-includes/wlwmanifest.xml 1 -
+/admin/controller/extension/extension/ 3 binance.com
+/public/.env 1 -
+/wp-admin/css/ 4 binance.com
+/wp-content/plugins/wp-automatic/js/main-front.js 1 -
+/sites/all/libraries/fckeditor/editor/filemanager/connectors/test.html 1 -
+/robots.txt 50 -
+/index.php/login/cms/wp-includes/wlwmanifest.xml 1 -
+//2020/wp-includes/wlwmanifest.xml 1 -
+/core/.env 1 -
+/reset.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 91
+42.112.127.241 5823 6272 35533768 20210921171236
+113.22.25.140 4256 4358 26881680 20210930203359
+42.115.191.5 1873 1982 12592362 20210924225434
+42.114.84.243 1792 2042 9243741 20210911192437
+42.112.222.130 1719 1733 8451109 20210907135505
+27.75.228.237 1353 3201 17241698 20210930161447
+42.119.79.177 1000 1005 5940510 20210922192041
+1.55.3.9 749 750 4015978 20210913155255
+115.73.236.70 519 2088 7381949 20210915162443
+58.187.195.145 309 309 2094950 20210914113434
+1.55.134.243 120 120 659327 20210901145741
+115.72.26.100 53 231 578262 20210916165350
+171.253.136.27 29 91 46095 20210921121357
+143.244.170.145 8 8 97832 20210928132751
+137.226.113.44 4 4 5384 20210923190534
+103.199.56.32 4 57 276979 20210917101401
+92.118.160.45 2 2 8436 20210926003358
+58.53.128.88 2 2 2692 20210915161543
+69.160.160.52 2 26 169421 20210905012345
+109.205.182.33 2 2 24467 20210924041449
+20.109.124.185 2 2 24457 20210915181012
+192.210.190.18 2 2 2692 20210901002812
+42.83.147.35 2 2 2692 20210925123300
+107.172.66.164 2 2 2692 20210914013308
+23.95.97.86 2 2 2692 20210908144237
+206.189.193.65 1 1 1346 20210908143810
+5.227.5.175 1 1 4218 20210929141103
+92.118.160.9 1 1 4218 20210928040604
+92.118.160.5 1 1 4218 20210925214222
+40.77.167.101 0 1 2590 
+95.179.130.74 1 1 1346 20210928103655
+5.45.75.92 1 1 1146 20210929155351
+149.56.160.192 1 1 4218 20210924232134
+193.32.126.155 1 25 173842 20210911012516
+219.138.163.116 1 1 1346 20210925102647
+185.130.104.185 1 1 1346 20210917184403
+157.245.57.139 1 1 4218 20210903120532
+124.126.78.158 1 1 37927 20210910015952
+54.212.149.4 1 1 1346 20210916190441
+157.55.39.33 0 2 83669 
+34.209.63.84 1 1 1346 20210922194002
+196.244.46.35 1 1 1346 20210901002806
+198.204.234.254 1 1 1346 20210903130041
+52.32.232.91 1 1 1346 20210908190203
+192.151.152.139 1 1 1346 20210909002201
+192.71.10.105 1 1 1346 20210914164459
+34.219.28.31 1 1 1346 20210919200537
+18.236.100.98 1 1 1346 20210904192332
+190.123.219.177 1 1 1346 20210924234509
+93.158.91.207 1 1 1346 20210905131314
+93.158.92.217 1 1 1346 20210923125001
+198.199.76.83 1 1 1346 20210908144022
+156.146.56.105 1 1 4218 20210902233543
+54.245.20.137 1 1 1346 20210917193400
+159.65.242.215 1 1 1346 20210919173920
+142.54.177.4 1 1 1346 20210927012258
+138.219.74.228 1 1 1346 20210914013303
+34.212.131.65 1 1 1346 20210924192748
+34.216.160.187 1 1 1346 20210924192815
+34.245.125.45 1 1 1346 20210905091448
+54.148.31.33 1 1 1346 20210919200504
+34.212.27.42 1 1 1346 20210904192417
+92.118.160.41 2 2 8436 20210919081810
+92.118.160.57 1 1 4218 20210928070150
+167.99.78.164 2 2 24464 20210920010856
+54.244.111.183 1 1 1346 20210904192402
+51.91.218.48 1 19 164900 20210924232203
+23.228.109.147 1 1 4218 20210920191602
+107.150.63.172 1 1 1346 20210921044107
+192.99.18.108 1 1 1346 20210915124040
+54.203.1.0 1 1 1346 20210914193249
+23.88.96.14 1 1 1346 20210925164225
+207.46.13.67 0 1 629 
+46.4.33.48 1 1 4218 20210927104038
+188.241.83.86 1 1 1146 20210919010702
+34.220.125.62 1 1 1346 20210920190757
+54.213.209.73 1 1 1346 20210903192443
+34.220.85.221 1 1 1346 20210916190506
+63.35.220.214 1 1 1346 20210908115349
+34.220.251.240 1 1 1346 20210929194847
+194.48.199.121 1 1 12234 20210925070440
+170.83.177.54 2 2 2692 20210924234535
+34.217.51.205 1 1 1346 20210917193318
+54.185.11.198 1 1 1346 20210902194444
+157.55.39.26 0 1 1116 
+196.242.115.82 1 1 1346 20210908144233
+207.46.13.124 0 1 2320 
+93.158.92.226 1 1 1346 20210929183504
+93.158.91.206 1 1 1346 20210909232205
+54.191.191.58 1 1 1346 20210914193223
+222.242.128.161 1 1 1346 20210901140128
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20210901 158 336 1181971 8
+20210902 429 441 2090149 4
+20210903 3 3 6910 3
+20210904 569 659 3178284 9
+20210905 212 236 1307847 7
+20210906 565 662 3021535 5
+20210907 123 174 667668 5
+20210908 796 1223 5043410 11
+20210909 346 444 1373493 9
+20210910 724 912 4478398 5
+20210911 89 204 910220 5
+20210912 232 290 1763467 4
+20210913 611 784 3647384 4
+20210914 726 974 5167812 11
+20210915 545 958 4476474 7
+20210916 1515 1698 9824609 5
+20210917 433 629 3586430 11
+20210918 1387 1702 8536398 6
+20210919 869 949 5794451 6
+20210920 1022 1282 7960941 8
+20210921 383 571 2121711 5
+20210922 1646 1911 12429338 5
+20210923 375 460 2415436 5
+20210924 1549 1768 11240444 11
+20210925 707 796 4099359 7
+20210926 363 440 2565608 5
+20210927 862 1105 5867829 6
+20210928 279 399 1629590 12
+20210929 1206 1331 8838216 7
+20210930 969 1064 6669434 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 7
+1h+ 55
+2mn-5mn 5
+15mn-30mn 13
+30s-2mn 10
+0s-30s 84
+30mn-1h 26
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 141
+/index.php/products/getAllWithUnit 1859 13729392 1 3
+/index.php/customers/getAll 1725 72145431 1 2
+/index.php/staff/getAll 1725 742504 0 1
+/index.php/Debit/customerDebit 1695 30551 0 2
+/index.php/order 965 3765016 2 11
+/index.php/order/statusOrder 848 1974241 2 5
+/index.php/order/addOrder 836 7524 0 0
+/index.php/order/managementOrder 780 1250643 0 3
+/index.php/order/orderDelivered 763 278647 0 0
+/index.php/order/popoverData 735 287080 0 8
+/index.php/dashboard 692 1669335 5 1
+/index.php/order/divideOrder 652 2536961 0 18
+/index.php/order/getOrderByShipment 649 755102 0 17
+/index.php/order/get 581 254136 0 0
+/index.php/order/update 565 9223 1 0
+/index.php/order/createShipment 452 11394 0 6
+/index.php/order/getByTruck 392 45833 0 0
+/index.php/dashboard/ 384 930384 2 0
+/index.php/warehouse_wholesale 366 522069 1 35
+/index.php/login 292 386602 177 73
+/index.php/order/updateStatusShipment 272 11501 0 0
+/index.php/order/saveDevided 266 0 0 0
+/index.php/order/updateWarehouse 266 125377 0 0
+/index.php/login/check_login 183 4392 0 0
+/index.php/Products/getLastBuyPrice 126 137079 0 0
+/index.php/stock_transfer/getExport 36 149432 0 0
+/index.php/order/deleteOrder/24083 1 0 0 0
+/index.php/warehouse_wholesale/saveAddWholesale 115 920 0 0
+/index.php/order/deleteOrder/24198 1 0 0 0
+/.git/config 2 24467 1 1
+/www/partials/temp-order-status.html 13 43626 0 0
+/index.php/order/xoaShipment 29 0 0 0
+/index.php/warehouse_retail 2 56409 0 0
+/index.php/debit/pay 2 0 0 0
+/index.php/order/deleteOrder/23977 1 0 0 0
+/index.php/order/deleteOrder/23898 1 0 0 0
+/www/partials/temp-warehouse-sale.html 1 2929 0 0
+/index.php/customers/deleteCustomer 4 31 0 0
+/index.php/order/deleteOrder/23700 1 0 0 0
+/index.php/products/deleteProduct 1 7 0 0
+/index.php/order/deleteOrder/23520 1 0 0 0
+/index.php/bill_detail/viewShipmentBills 87 267858 0 2
+/index.php/order/addOldDebitToOrder 1 0 0 0
+/index.php/order/doiShipment 41 0 0 0
+/www/fonts/glyphicons-halflings-regular.woff2 16 216336 0 0
+/index.php/order/deleteOrder/23877 1 0 0 0
+/www/partials/temp-order-management.html 9 14280 0 0
+/index.php/StatisticController/Sales 39 92065 0 3
+/index.php/order/deleteOrder/23900 1 0 0 0
+/index.php/order/deleteOrder/23873 1 0 0 0
+/index.php/staff/detailStaff 1 147 0 0
+/index.php/order/deleteOrder/23602 1 0 0 0
+/index.php/order/deleteOrder/23876 1 0 0 0
+/www/partials/promotion/temp-promotion-create.html 3 6519 0 0
+/index.php/order/deleteOrder/23744 1 0 0 0
+/www/partials/temp-create-product.html 7 12089 0 0
+/index.php/customers/getCustomer 19 3258 0 0
+/index.php/order/deleteOrder/24285 1 0 0 0
+/index.php/warehouse_wholesale/addWholesale 126 5035569 0 0
+/index.php/order/deleteOrder/23995 1 0 0 0
+/index.php/debit/payLiability 12 0 0 0
+/wp-content/ 1 12228 0 1
+/index.php/products/createProduct 6 0 0 0
+/www/partials/temp-warehouses-export.html 18 38574 0 0
+/index.php/bill_detail/popoverData 48 17448 0 0
+/index.php/order/deleteOrder/24212 1 0 0 0
+/index.php/order/deleteOrder/23532 1 0 0 0
+/index.php/order/deleteOrder/23902 2 0 0 0
+/index.php/order/deleteOrder/23901 1 0 0 0
+/www/partials/temp-warehouse.html 65 63248 0 0
+/index.php/promotion/getList 3 1533 0 0
+/www/partials/temp-retail.html 1 785 0 0
+/core/.env 1 12231 0 0
+/www/partials/promotion/temp-promotion-board.html 2 2362 0 0
+/index.php/shipment/saveShipmentPaymentDetail 118 0 0 2
+/index.php/order/deleteOrder/23875 1 0 0 0
+/index.php/order/deleteOrder/23899 2 0 0 0
+/index.php/order/deleteOrder/23879 1 0 0 0
+/www/partials/temp-total-debit.html 2 1610 0 0
+/www/partials/temp-product.html 6 4608 0 0
+/index.php/order/deleteOrder/23586 1 0 0 0
+/index.php/products/getUnits 49 11809 0 0
+/index.php/products 73 1060294 0 1
+/app/.env 1 12235 0 0
+/index.php/order/deleteOrder/23619 1 0 0 0
+/index.php/debit/totalDebit 28 9852 0 0
+/index.php/order/deleteOrder/23562 1 0 0 0
+/index.php/staff/editStaff 1 0 0 0
+/.env 2 24461 2 0
+/index.php/order/deleteOrder/23908 1 0 0 0
+/index.php/order/deleteOrder/24082 1 0 0 0
+/index.php/StatisticController/getBillList 5 1718 0 1
+/index.php/customers 95 2152101 0 0
+/analytics/jbips/ 1 12234 1 1
+/index.php/promotion/getByOrder 23 5205 0 0
+/www/partials/temp-order-divide.html 13 24579 0 0
+/index.php/staff/getPosition 1 86 0 0
+/www/partials/temp-order-create.html 22 50760 0 0
+/index.php/order/deleteOrder/23895 1 0 0 0
+/wp-login.php 2 24464 1 1
+/index.php/order/deleteOrder/23880 1 0 0 0
+/index.php/bill_detail 6 3996 0 0
+/index.php/StatisticController/getSaleCommissionMetaData 1 553 0 0
+/www/partials/temp-bill-detail.html 5 4364 0 0
+/ 15 111053 2 2
+/index.php/products/get 42 13824 0 0
+/index.php/order/deleteOrder/23903 1 0 0 0
+/index.php/order/deleteOrder/23896 1 0 0 0
+/index.php/products/editProduct 41 0 0 0
+/index.php/order/deleteOrder/23521 1 0 0 0
+/index.php/promotion/create 1 11 0 0
+/index.php/promotion/get 12 2990 0 0
+/index.php/order/deleteOrder/23591 1 0 0 0
+/www/partials/temp-bill.html 14 33956 0 0
+/www/partials/temp-customers.html 14 18704 0 0
+/www/partials/temp-staff.html 1 748 0 0
+/www/partials/temp-staff-create.html 1 985 0 0
+/index.php/order/deleteOrder/23563 1 0 0 0
+/index.php/staff 2 873 0 0
+/index.php/order/deleteOrder/23576 1 0 0 0
+/index.php/order/deleteOrder/23507 1 0 0 0
+/index.php/customers/createCustomer 21 168 0 0
+/index.php/ 6 14534 0 0
+/www/partials/statistic/temp-sales-statistic.html 9 9968 0 0
+/index.php/order/deleteOrder/23878 1 0 0 0
+/index.php/order/deleteOrder/23897 1 0 0 0
+/index.php/order/deleteOrder/23530 1 0 0 0
+/index.php/order/xoaChuyen 12 0 0 0
+/public/.env 1 12238 0 0
+/www/partials/temp-order-list.html 46 42030 0 0
+/index.php/warehouse_retail/createBill 1 0 0 0
+/www/partials/temp-warehouse-wholesale.html 8 10836 0 0
+/index.php/customers/editCustomer 18 0 0 0
+/index.php/order/deleteOrder/24033 1 0 0 0
+/www/partials/statistic/temp-bill-list.html 2 928 0 0
+/index.php/warehouse_wholesale_sale 71 2156584 0 0
+/index.php/warehouses 26 3640 1 0
+/index.php/order/deleteOrder/23874 1 0 0 0
+/index.php/products/createProductView 49 311279 0 0
+/index.php/promotion/update 3 33 0 0
+/www/partials/salesCommission.html 1 1066 0 0
+END_SIDER

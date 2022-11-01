@@ -1,0 +1,710 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202108 will be lost/reset.
+# Last config file used to build this data file was /home/npptinmi/tmp/awstats/ssl/awstats.npptinminh.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2015                
+POS_TIME 2689                
+POS_VISITOR 11876               
+POS_DAY 15910               
+POS_DOMAIN 3533                
+POS_LOGIN 3968                
+POS_ROBOT 4123                
+POS_WORMS 4522                
+POS_EMAILSENDER 4653                
+POS_EMAILRECEIVER 4796                
+POS_SESSION 16822               
+POS_SIDER 17033               
+POS_FILETYPES 4931                
+POS_DOWNLOADS 5246                
+POS_OS 5312                
+POS_BROWSER 5576                
+POS_SCREENSIZE 6506                
+POS_UNKNOWNREFERER 6580                
+POS_UNKNOWNREFERERBROWSER 7401                
+POS_ORIGIN 8159                
+POS_SEREFERRALS 8301                
+POS_PAGEREFS 8476                
+POS_SEARCHWORDS 8678                
+POS_KEYWORDS 8830                
+POS_MISC 2353                
+POS_ERRORS 8889                
+POS_CLUSTER 3824                
+POS_SIDER_404 9032                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20210901002800 2 202 12731962365586
+FirstTime 20210801023142
+LastTime 20210831173849
+LastUpdate 20210901203427 2 0 1 0 0
+TotalVisits 219                 
+TotalUnique 100                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 101                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+AddToFavourites 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 3 3 46347 12 14 8112
+1 6 6 12274 44 45 83378
+2 7 7 45999 32 37 29456
+3 1 1 0 3 7 8031
+4 0 0 0 29 32 31582
+5 4 4 81410 4 9 4983
+6 9 9 54235 17 38 452572
+7 60 63 165223 25 33 33743
+8 1209 2157 9122036 75 190 247881
+9 1470 1985 9354014 65 149 128692
+10 2044 3147 18754279 36 109 86499
+11 3713 4142 28425361 48 141 103252
+12 2396 2724 13446763 23 117 115076
+13 2554 2775 16469716 31 157 289756
+14 1641 2150 11248320 48 115 95737
+15 2571 3438 18763593 46 132 107093
+16 2425 3134 14198438 48 163 142951
+17 1779 2062 9617354 35 121 107892
+18 1099 1392 6558686 22 132 309861
+19 566 920 7147276 51 79 30960
+20 118 136 571267 31 46 131247
+21 179 189 1723499 18 23 18581
+22 61 62 580095 8 23 18487
+23 30 30 759983 25 29 66002
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 16
+vn 23824 30365 165365427
+us 61 61 951891
+gr 21 21 324477
+cn 10 10 13460
+in 5 5 4038
+de 4 4 5384
+se 4 8 5384
+it 3 3 12654
+sc 2 2 2692
+ca 2 2 2692
+ua 2 2 8436
+ru 2 12 110051
+gb 2 38 329800
+is 1 1 4218
+id 1 1 1346
+eu 1 1 4218
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 7
+no_user_agent 55 8436 20210831162031 0
+Googlebot/ 53 288660 20210831133736 0
+bingbot/ 22 221488 20210827182116 0
+bingpreview 21 545891 20210827185303 0
+unknown 8 208 20210827024941 8
+Python\-urllib/ 5 88488 20210802015525 0
+Go\-http\-client/ 4 48918 20210828083041 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+tar 4 0 0 0
+map 2 573460 0 0
+php 1 37938 0 0
+png 2071 4480046 0 0
+jpg 258 3438977 0 0
+html 968 2485038 0 0
+woff2 21 270420 0 0
+js 3027 11166567 0 0
+gif 142 215367 0 0
+env 1 12223 0 0
+css 1089 3562792 0 0
+Unknown 22939 140409915 0 0
+xml 13 493425 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/backup.tar 4 0 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 15
+Unknown 62 40
+win7 14 14
+ios_ipad 19 1
+androidoreo 1 1
+win8.1 1 1
+macosx9 2 2
+linux 42 24
+macosx 8 8
+ios_iphone 83 7
+linuxandroid 3 3
+win10 30284 23837
+winxp 1 1
+macosx13 1 1
+win8 12 2
+macosx15 3 3
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 42
+firefox68.0 1 1
+firefox90.0 2404 632
+chrome35.0.1916.47 2 2
+chrome78.0.3904.108 4 4
+msie7.0 2 0
+firefox81.0 2 2
+chrome84.0.4147.105 1 1
+chrome74.0.3729.169 1 1
+msie11.0 1 1
+firefox72.0 2 2
+firefox82.0 1 1
+chrome92.0.4515.159 4332 3910
+chrome78.0.3904.62 1 1
+Unknown 42 38
+chrome42.0.2311.90 2 2
+chrome60.0.3112.107 2 2
+firefox63.0 2 2
+chrome71.0.3578.98 1 1
+chrome55.0.2883.75 2 2
+chrome92.0.4515.107 5212 5064
+chrome66.0.3359.170 3 3
+chrome83.0.4089.0 2 2
+chrome58.0.3029.110 1 1
+firefox91.0 5751 2149
+chrome86.0.4240.75 5 5
+mozilla 20 2
+firefox77.0 2 2
+firefox70.0 2 2
+safari 102 8
+safari13.1.1 1 1
+chrome79.0.3945.88 1 1
+chrome89.0.4389.114 19 1
+chrome90.0.4430.85 1 1
+firefox84.0 4 4
+chrome68.0.3440.106 1 1
+chrome91.0.4472.114 4 4
+chrome88.0.4240.193 2 2
+chrome79.0 16 16
+chrome92.0.4515.131 12556 12055
+chrome83.0.4103.97 14 14
+chrome90.0.4430.72 11 1
+chrome1.0.154.53 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 9
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210816080916
+go-resty/2.3.0_(https://github.com/go-resty/resty) 20210809011609
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20210813023130
+Mozilla/5.0_(compatible;_Dataprovider.com) 20210823080122
+Go_http_package 20210831163144
+GRequests/0.10 20210829213645
+Scrapy/2.4.1_(_https://scrapy.org) 20210820150646
+python-requests/2.26.0 20210812015602
+python-requests/2.25.1 20210820122321
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+go-resty/2.3.0_(https://github.com/go-resty/resty) 20210809011609
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20210813023130
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20210816080916
+GRequests/0.10 20210829213645
+Go_http_package 20210831163144
+Scrapy/2.4.1_(_https://scrapy.org) 20210820150646
+python-requests/2.25.1 20210820122321
+python-requests/2.26.0 20210812015602
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 315 321
+From1 0 0
+From2 3 3
+From3 5 5
+From4 23622 30207
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_google_com_hk 2 2
+bing 1 1
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+http://112.213.89.32:80 3 3
+https://112.213.89.32 2 2
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+401 60 1816
+404 1188 1440551
+302 8 0
+303 14 0
+307 348 0
+403 6 7368
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 67
+/ckfinder/core/connector/php/connector.php 1 -
+/index.php/login/wp1/wp-includes/wlwmanifest.xml 10 -
+/index.php/login/wp-includes/wlwmanifest.xml 12 -
+/index.php/login/wp/wp-includes/wlwmanifest.xml 7 -
+/admin/plugins/elfinder/php/connector.php 1 -
+/admin/index.php 1 http://npptinminh.com/admin/index.php
+/assets/filemanager/dialog.php 1 -
+/uploads/ 7 binance.com
+/config.js 1 -
+/backup.zip 6 -
+/index.php/login/test/wp-includes/wlwmanifest.xml 9 -
+/wordpress/wp-admin/setup-config.php 1 -
+/admin/controller/extension/extension/ 7 binance.com
+/phpinfo 1 -
+/index.php/blog/ 1 -
+/humans.txt 4 http://npptinminh.com/humans.txt
+/wp-includes 1 www.google.com
+/www/css/bootstrap-datepicker.min.css.map 2 -
+/ckeditor/ckfinder/core/connector/php/connector.php 1 -
+/index.php/blog/wp-login.php 1 -
+/images/ 7 binance.com
+/.env 2 -
+/index.php/login/wordpress/wp-includes/wlwmanifest.xml 7 -
+/index.php/admin/index.php 1 -
+/phpinfo.php 1 -
+/info.php 1 -
+/app/webroot/js/kcfinderupload.php 1 -
+/filemanager/dialog.php 1 -
+/wp-content/uploads/upload_index.php 1 -
+/index.php/manager/ 1 -
+/index.php/login/xmlrpc.php 8 -
+/index.php/user/login/ 1 -
+/wp-login.php 28 http://npptinminh.com/wp-login.php
+/index.php/admin/users/login_do/ 1 -
+/index.php/wp-login.php 1 -
+/ads.txt 8 http://npptinminh.com/ads.txt
+/aws.yml 1 -
+/index.php/login/site/wp-includes/wlwmanifest.xml 7 -
+/index.php/login/website/wp-includes/wlwmanifest.xml 10 -
+/sites/default/files/ 7 binance.com
+/index.php/login/cms/wp-includes/wlwmanifest.xml 11 -
+/index.php/login/web/wp-includes/wlwmanifest.xml 10 -
+/index.php/login/2018/wp-includes/wlwmanifest.xml 7 -
+/index.php/login/2019/wp-includes/wlwmanifest.xml 9 -
+/.well-known/ 6 binance.com
+/backup.tar 6 -
+/img/inner-shadow.png 828 https://www.npptinminh.com/www/css/dataTables.css
+/sitemap.xml 2 http://npptinminh.com/sitemap.xml
+/.env.bak 1 -
+/www/css/bootstrap.min.css.map 2 -
+/index.php/login/news/wp-includes/wlwmanifest.xml 8 -
+/.aws/credentials 2 -
+/_profiler/phpinfo 1 -
+/config/aws.yml 1 -
+/index.php/login/sito/wp-includes/wlwmanifest.xml 9 -
+/index.php/login/media/wp-includes/wlwmanifest.xml 8 -
+/index.php/login/blog/wp-includes/wlwmanifest.xml 10 -
+/index.php/login/shop/wp-includes/wlwmanifest.xml 8 -
+/index.php/admin.php 1 -
+/robots.txt 58 -
+/index.php/administrator/ 1 -
+/wp-admin/css/ 7 binance.com
+/files/ 7 binance.com
+/index.php/login/2020/wp-includes/wlwmanifest.xml 2 -
+/index.php/login/wp2/wp-includes/wlwmanifest.xml 11 -
+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php 1 -
+/index.php/admin/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 101
+42.116.37.201 12222 12548 78749871 20210813172435
+118.69.178.228 5397 5809 28679993 20210830231305
+113.22.161.144 2680 2796 14639546 20210816173010
+27.77.247.106 1378 3406 16539345 20210824162423
+27.77.252.213 403 1463 6351566 20210807125538
+1.55.134.243 395 571 3263360 20210831163417
+27.77.241.0 335 1419 5982317 20210813185119
+115.72.182.158 312 781 2657451 20210829194359
+119.15.191.105 263 263 1970116 20210817231409
+115.76.188.106 250 606 2202720 20210826155233
+115.73.236.70 71 292 495319 20210831173849
+119.15.191.104 60 60 470193 20210817223644
+115.73.178.115 32 188 464220 20210830190642
+171.235.177.70 21 158 2894826 20210808192236
+134.209.69.115 16 16 607209 20210816233716
+137.226.113.44 4 4 5384 20210826172804
+92.118.160.17 4 4 50565 20210831163144
+158.101.2.36 3 3 4038 20210826111112
+92.118.160.37 3 3 12654 20210817073702
+59.175.144.19 3 3 4038 20210829213645
+92.118.160.61 3 3 46359 20210829094802
+45.77.176.74 2 2 2692 20210805090617
+144.86.173.129 2 2 75834 20210813023130
+196.196.149.101 2 2 2692 20210808064958
+173.212.233.72 2 2 8436 20210810180431
+51.77.246.201 1 19 164900 20210823080121
+94.158.36.183 1 1 4218 20210824084639
+34.209.47.188 1 1 1346 20210816193107
+54.191.60.15 1 1 1346 20210824191202
+208.110.85.69 1 1 1346 20210808102242
+144.86.173.66 1 1 37911 20210804114649
+164.132.202.72 1 1 4218 20210820070327
+216.19.195.160 1 1 4218 20210819122320
+52.39.174.37 1 1 1346 20210804192118
+52.25.54.220 1 1 1346 20210819192611
+54.203.73.198 1 1 1346 20210810175907
+54.201.222.182 1 1 1346 20210811201745
+138.199.59.173 1 1 4218 20210815124040
+92.118.160.57 1 1 4218 20210808103706
+192.36.248.249 1 1 1346 20210807085521
+92.118.160.1 1 1 37923 20210809053606
+54.148.135.26 1 1 1346 20210807192345
+223.158.42.189 1 1 1346 20210812211846
+144.86.173.91 1 1 37923 20210803214829
+92.118.160.45 1 1 37911 20210808113252
+79.173.188.12 1 19 164900 20210807125330
+93.158.91.208 1 1 1346 20210821053941
+180.252.88.40 1 1 1346 20210808025514
+220.170.86.250 1 1 1346 20210801023142
+144.217.135.178 1 1 4218 20210823080058
+45.129.18.62 1 1 0 20210808030155
+144.86.173.28 1 1 37923 20210811060841
+20.52.128.29 1 1 4218 20210817011023
+95.79.84.116 1 1 4218 20210801224753
+62.152.55.125 1 11 105833 20210807215735
+178.128.87.81 1 1 4218 20210827010222
+45.129.18.180 1 1 0 20210801204219
+1.55.170.132 1 1 1146 20210814014946
+18.232.90.135 1 1 4218 20210802002812
+103.221.234.212 1 1 1346 20210808064941
+162.55.209.71 1 1 1346 20210828063059
+208.110.85.70 1 1 1346 20210810211655
+171.255.197.4 1 1 0 20210809011609
+50.112.158.55 1 1 1346 20210807192358
+167.99.127.156 1 1 1346 20210806185619
+34.209.135.34 1 1 1346 20210823194320
+84.17.57.121 1 1 4218 20210825070716
+84.17.57.117 1 1 4218 20210827132951
+82.221.139.39 1 1 4218 20210805155312
+92.118.160.13 2 2 42141 20210809122409
+58.186.60.106 1 1 1146 20210820150646
+3.249.9.1 1 1 1346 20210805161530
+42.49.132.117 1 1 1346 20210816020713
+143.244.170.145 1 1 12223 20210830221237
+93.158.91.184 1 1 1346 20210813163144
+45.134.24.250 2 2 2692 20210808172613
+52.12.133.16 1 1 1346 20210808192812
+209.97.163.81 2 2 2692 20210818122805
+93.158.90.63 1 1 1346 20210827094756
+157.245.115.185 1 1 1346 20210812015602
+58.186.216.232 2 2 2292 20210818093158
+147.135.137.126 1 1 1346 20210817155925
+35.84.142.232 1 1 1346 20210817230103
+3.250.119.160 1 1 1346 20210808115437
+124.228.112.16 1 1 1346 20210806074758
+34.222.248.222 1 1 1346 20210819192704
+92.118.160.5 2 2 8436 20210829203923
+93.158.66.18 0 4 0 
+192.99.18.122 2 2 2692 20210812024058
+18.237.116.123 1 1 1346 20210814194300
+144.86.173.7 1 1 37923 20210806220601
+92.118.160.9 1 1 4218 20210807065746
+42.83.147.35 1 1 1346 20210827111638
+209.145.58.226 1 1 1346 20210820122321
+212.86.102.106 1 1 4218 20210825051638
+54.149.153.150 1 1 1346 20210825190208
+92.118.160.41 2 2 75834 20210815054153
+144.86.173.159 1 1 37911 20210810124803
+34.221.12.63 1 1 1346 20210829192530
+49.234.47.214 1 1 1346 20210806123339
+222.240.236.170 1 1 1346 20210823013851
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20210801 4 4 43475 4
+20210802 1792 2132 12844429 7
+20210803 539 641 3107039 5
+20210804 1596 1882 12215392 5
+20210805 403 596 3287948 7
+20210806 1576 1854 10848132 10
+20210807 281 400 2114699 12
+20210808 381 536 4232681 13
+20210809 1728 2105 12222658 6
+20210810 156 310 1932993 8
+20210811 2315 2683 16441131 6
+20210812 588 693 3217676 9
+20210813 1681 1843 12284188 7
+20210814 393 566 2320177 4
+20210815 1543 1568 9673633 6
+20210816 948 1300 6132191 9
+20210817 674 855 5959922 10
+20210818 104 485 1905784 5
+20210819 2148 2669 14937254 8
+20210820 603 890 3743032 10
+20210821 1035 1257 6569175 6
+20210822 661 669 2732096 2
+20210823 87 180 709751 6
+20210824 51 145 480818 5
+20210825 513 692 3422649 9
+20210826 183 438 1035529 8
+20210827 576 875 3417978 11
+20210828 9 60 228538 2
+20210829 745 1020 4344549 6
+20210830 165 324 977754 7
+20210831 467 864 3762897 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30mn-1h 19
+2mn-5mn 5
+0s-30s 109
+1h+ 50
+30s-2mn 8
+15mn-30mn 17
+5mn-15mn 11
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 166
+/index.php/products/getAllWithUnit 2239 16665899 1 3
+/index.php/customers/getAll 2083 84953122 2 0
+/index.php/staff/getAll 2083 889240 0 2
+/index.php/Debit/customerDebit 1878 33940 0 1
+/index.php/order 1253 5973266 2 19
+/index.php/order/popoverData 1211 431716 3 24
+/index.php/order/statusOrder 1021 2789477 0 2
+/index.php/order/managementOrder 997 2242265 0 3
+/index.php/order/addOrder 987 8883 0 0
+/index.php/order/orderDelivered 934 320087 0 1
+/index.php/order/getOrderByShipment 796 932915 1 9
+/index.php/order/get 681 272305 0 0
+/index.php/dashboard 674 1630567 4 1
+/index.php/order/divideOrder 646 2502061 0 9
+/index.php/order/update 638 10641 1 0
+/index.php/order/createShipment 597 15114 0 1
+/index.php/order/getByTruck 515 58267 0 1
+/index.php/dashboard/ 508 1225932 1 0
+/index.php/warehouse_wholesale 450 655115 1 23
+/index.php/order/updateStatusShipment 290 10387 0 0
+/index.php/order/saveDevided 274 0 0 0
+/index.php/login 274 411254 184 94
+/index.php/order/updateWarehouse 274 135464 0 0
+/index.php/bill_detail/viewShipmentBills 211 673825 0 2
+/index.php/warehouse_wholesale_sale 197 8563477 0 0
+/index.php/order/deleteOrder/23099 1 0 0 0
+/www/partials/temp-order-divide.html 14 5462 0 0
+/index.php/order/deleteOrder/23012 1 0 0 0
+/index.php/order/deleteOrder/23324 1 0 0 0
+/www/partials/temp-bill-detail.html 13 12001 0 0
+/index.php/promotion/update 4 44 0 0
+/index.php/order/deleteOrder/22797 1 0 0 0
+/www/partials/temp-order-management.html 8 8925 0 0
+/index.php/order/processReturnHalfWarehouse 2 40 0 0
+/index.php/order/deleteOrder/23388 1 0 0 0
+/index.php/order/deleteOrder/23081 1 0 0 0
+/index.php/bill_detail/popoverData 69 22493 0 0
+/index.php/order/doiShipment 20 0 0 0
+/index.php/order/deleteOrder/22980 1 0 0 0
+/index.php/warehouse_retail/createBill 1 0 0 0
+/index.php/order/deleteOrder/23280 1 0 0 0
+//test/wp-includes/wlwmanifest.xml 1 37956 0 0
+/index.php/order/deleteOrder/23175 1 0 0 0
+/index.php/order/xoaChuyen 18 0 0 0
+//wp-includes/wlwmanifest.xml 1 37951 0 0
+/index.php/order/deleteOrder/23276 1 0 0 0
+/www/partials/temp-total-debit.html 9 7245 0 0
+//cms/wp-includes/wlwmanifest.xml 1 37955 0 0
+/index.php/products/deleteProduct 4 27 0 0
+/index.php/StatisticController/Sales 67 147372 0 3
+/index.php/order/deleteOrder/23453 1 0 0 0
+/index.php/order/deleteOrder/22506 1 0 0 0
+/index.php/order/deleteOrder/23382 1 0 0 0
+/index.php/products/get 36 12192 0 0
+/www/fonts/glyphicons-halflings-regular.woff2 21 270420 0 0
+/index.php/order/deleteOrder/23405 1 0 0 0
+/index.php/order/deleteOrder/23082 1 0 0 0
+/index.php/StatisticController/getSaleCommissionMetaData 6 3318 0 0
+/index.php/warehouse_wholesale/saveAddWholesale 139 1112 0 0
+/www/partials/temp-customers.html 7 8016 0 0
+/index.php/user 1 175 0 0
+/index.php/order/deleteOrder/23391 1 0 0 0
+/index.php/customers/getCustomer 11 1840 0 0
+//wordpress/wp-includes/wlwmanifest.xml 1 37961 0 0
+/index.php/products/editProduct 34 0 0 0
+/index.php/order/deleteOrder/23400 1 0 0 0
+/index.php/order/deleteOrder/23423 1 0 0 0
+/index.php/order/deleteOrder/23233 1 0 0 0
+/index.php/order/deleteOrder/23401 1 0 0 0
+/www/partials/statistic/temp-bill-list.html 2 928 0 0
+/www/partials/temp-import-detail.html 1 698 0 0
+/index.php/order/returnWarehouse 11 0 0 0
+/www/partials/temp-warehouses-export.html 21 45003 0 0
+/www/partials/temp-user-list.html 1 887 1 0
+/www/partials/temp-bill.html 23 44404 1 0
+/index.php/stock_transfer/getExport 78 265557 0 0
+/index.php/promotion/getByOrder 53 7124 0 0
+/index.php/order/deleteOrder/22656 1 0 0 0
+/index.php/order/deleteOrder/23381 1 0 0 0
+/www/partials/temp-product.html 5 3072 0 0
+/index.php/order/deleteOrder/23281 2 0 0 0
+/www/partials/temp-staff.html 1 748 0 0
+/index.php/order/deleteOrder/23379 1 0 0 0
+/index.php/order/deleteOrder/23414 1 0 0 1
+//news/wp-includes/wlwmanifest.xml 1 37956 0 0
+/index.php/order/deleteOrder/22610 1 0 0 0
+/www/partials/promotion/temp-promotion-create.html 3 6519 0 0
+/index.php/warehouse_wholesale/addWholesale 147 5773394 0 0
+/www/partials/temp-warehouse-wholesale.html 12 12642 0 0
+/index.php/shipment/saveShipmentPaymentDetail 131 0 0 1
+/index.php/order/deleteOrder/23366 1 0 0 0
+/index.php/order/deleteOrder/23373 1 0 0 0
+/index.php/bill_detail 87 58663 0 2
+/index.php/Products/getLastBuyPrice 147 158883 0 0
+/index.php/products/createProduct 3 0 0 0
+/index.php/order/deleteOrder/23406 1 0 0 0
+/www/partials/temp-order-create.html 45 81780 0 0
+/index.php/customers/createCustomer 33 264 0 0
+/www/partials/temp-total-liability-detail.html 1 488 0 0
+/index.php/debit/totalLiabilityDetail 1 156 0 0
+//website/wp-includes/wlwmanifest.xml 1 37959 0 0
+/index.php/order/deleteOrder/23433 1 0 0 0
+/index.php/StatisticController/getBillList 13 4216 0 0
+/index.php/debit/pay 4 0 0 0
+/index.php/products/createProductView 39 243881 0 0
+/www/partials/temp-create-product.html 6 6908 0 0
+/.env 1 12223 1 1
+/index.php/warehouses 41 5740 0 0
+/index.php/order/deleteOrder/23094 1 0 0 0
+/index.php/order/deleteOrder/22547 1 0 0 0
+/index.php/promotion/getList 5 2478 0 0
+/index.php/order/deleteOrder/23380 1 0 0 0
+/index.php/order/returnHalfWarehouse 2 533 0 0
+/index.php/order/addOldDebitToOrder 6 0 0 0
+/index.php/customers/deleteCustomer 9 72 0 0
+/www/partials/temp-order-status.html 13 27762 0 0
+/index.php/products 68 1067901 0 0
+/index.php/order/deleteOrder/23464 1 0 0 0
+/index.php/staff 1 437 0 0
+/index.php/order/deleteOrder/22379 1 0 0 0
+/www/partials/temp-order-list.html 73 60710 0 0
+/index.php/order/deleteOrder/23273 2 0 0 0
+/index.php/login/check_login 148 3454 1 0
+//xmlrpc.php 1 37938 0 0
+/index.php/debit/totalDebit 35 11463 0 1
+//wp2/wp-includes/wlwmanifest.xml 1 37955 0 0
+//wp1/wp-includes/wlwmanifest.xml 1 37955 0 0
+/index.php/order/deleteOrder/23399 1 0 0 0
+/ 31 643035 15 14
+/index.php/order/deleteOrder/23387 1 0 0 0
+/index.php/order/deleteOrder/23484 1 0 0 0
+/index.php/bill_detail/viewImportDetail 1 377 0 0
+/index.php/order/deleteOrder/22612 1 0 0 0
+/www/partials/temp-warehouse.html 68 67536 0 0
+/www/js/angular/angular.min.js.map 2 573460 0 0
+/index.php/customers 90 2341425 0 0
+/index.php/order/deleteOrder/23309 1 0 0 0
+/index.php/order/deleteOrder/22715 1 0 0 0
+/www/partials/promotion/temp-promotion-board.html 4 4724 0 0
+/index.php/ 75 181711 0 0
+/index.php/products/getUnits 39 9399 0 0
+/www/partials/salesCommission.html 6 6396 0 0
+/index.php/order/removeOldDebitFromOrder 1 0 0 0
+/index.php/order/deleteOrder/23084 1 0 0 0
+/index.php/promotion/delete 1 0 0 0
+/index.php/warehouse_retail 3 83025 0 0
+//site/wp-includes/wlwmanifest.xml 1 37956 0 0
+/index.php/order/xoaShipment 39 0 0 0
+/www/partials/statistic/temp-sales-statistic.html 16 19936 0 0
+/index.php/order/deleteOrder/22690 1 0 0 0
+//wp/wp-includes/wlwmanifest.xml 1 37954 0 0
+/index.php/order/deleteOrder/23408 1 0 0 0
+//web/wp-includes/wlwmanifest.xml 1 37955 0 0
+/index.php/order/deleteOrder/23384 1 0 0 0
+/index.php/order/deleteOrder/23361 1 0 0 0
+/index.php/customers/editCustomer 11 0 0 0
+/index.php/order/deleteOrder/23390 1 0 0 0
+//sito/wp-includes/wlwmanifest.xml 1 37956 0 1
+//blog/wp-includes/wlwmanifest.xml 1 37956 0 0
+/index.php/order/deleteOrder/23308 1 0 0 0
+/index.php/promotion/get 14 3573 0 0
+/index.php/order/deleteOrder/23378 2 0 0 0
+/index.php/order/deleteOrder/23085 1 0 0 0
+/www/partials/temp-retail.html 2 1570 0 0
+/index.php/debit/payLiability 8 0 0 0
+/index.php/order/deleteOrder/23083 1 0 0 0
+END_SIDER

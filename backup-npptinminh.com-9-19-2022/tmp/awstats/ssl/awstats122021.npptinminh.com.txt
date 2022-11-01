@@ -1,0 +1,929 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202112 will be lost/reset.
+# Last config file used to build this data file was /home/npptinmi/tmp/awstats/ssl/awstats.npptinminh.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2015                
+POS_TIME 2693                
+POS_VISITOR 20173               
+POS_DAY 27290               
+POS_DOMAIN 3581                
+POS_LOGIN 3995                
+POS_ROBOT 4150                
+POS_WORMS 4685                
+POS_EMAILSENDER 4816                
+POS_EMAILRECEIVER 4959                
+POS_SESSION 28266               
+POS_SIDER 28477               
+POS_FILETYPES 5094                
+POS_DOWNLOADS 5383                
+POS_OS 5431                
+POS_BROWSER 5738                
+POS_SCREENSIZE 6816                
+POS_UNKNOWNREFERER 6890                
+POS_UNKNOWNREFERERBROWSER 7541                
+POS_ORIGIN 8016                
+POS_SEREFERRALS 8160                
+POS_PAGEREFS 8343                
+POS_SEARCHWORDS 8659                
+POS_KEYWORDS 8811                
+POS_MISC 2357                
+POS_ERRORS 8870                
+POS_CLUSTER 3851                
+POS_SIDER_404 9023                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20220101032054 61 10373 9619588646302
+FirstTime 20211201065850
+LastTime 20211231231032
+LastUpdate 20220101221416 61 0 60 0 0
+TotalVisits 286                 
+TotalUnique 179                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 182                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 6 24 7676 13 15 7927
+1 5 5 57074 15 36 228416
+2 11 21 130331 23 71 373827
+3 4 12 6910 20 22 16129
+4 6 6 29632 18 29 24760
+5 7 7 10948 39 42 38404
+6 5 5 5184 37 71 172072
+7 6 7 11922 14 33 124797
+8 1076 2488 10822674 50 158 96772
+9 1563 2072 10981363 71 283 205560
+10 1049 1329 9006144 35 151 129425
+11 5766 7227 57475107 65 194 250363
+12 6292 7715 52149972 51 235 217888
+13 4147 5799 34080259 28 158 252445
+14 2079 3139 17092587 33 117 107936
+15 3308 4598 27029216 35 144 126210
+16 4633 5631 34895627 40 192 201801
+17 4107 5516 29494177 53 449 470244
+18 3738 6301 32137173 81 489 492014
+19 1995 2398 14506058 112 321 596003
+20 375 437 2762079 29 84 156391
+21 654 1240 6937732 42 303 313428
+22 431 5580 24237828 115 1573 1611814
+23 330 419 1626121 13 64 55710
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 14
+vn 41249 61393 363278404
+in 193 313 701843
+us 102 219 1145058
+cn 13 15 20334
+fr 8 8 198131
+gr 7 7 96944
+de 6 6 8076
+se 4 4 5384
+ca 3 3 2692
+ru 3 3 13568
+gb 2 2 13578
+ua 1 1 4218
+nl 1 1 1346
+ch 1 1 4218
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 10
+no_user_agent 67 4218 20211231131455 0
+bingbot/ 62 754955 20211226022233 0
+baidu 61 440002 20211225192953 0
+Googlebot/ 45 336661 20211231112909 0
+unknown 9 234 20211231023528 9
+bingpreview 6 34750 20211226025316 0
+Go\-http\-client/ 2 24464 20211203161732 0
+bot[\s_+:,\.\;\/\\-] 1 1346 20211224114355 0
+(firefox/)([0-9]\.|[0-1][0]\.) 1 4218 20211222214747 0
+facebookexternalhit/ 1 1346 20211231142329 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+js 8131 26595898 0 0
+map 28 8028440 0 0
+Unknown 39775 298382655 0 0
+png 9902 15059250 0 0
+html 1734 3785752 0 0
+env 1 12222 0 0
+jpg 636 7500327 0 0
+css 1524 5198627 0 0
+php 1 12237 0 0
+gif 190 291026 0 0
+woff2 54 627360 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 17
+linux 43 41
+androidlollipop 1 1
+macosx13 6 5
+macosx9 2 2
+ios_ipad 20 2
+Unknown 48 30
+win8 2 0
+macosx12 1 1
+macosx15 37 25
+win8.1 1 1
+linuxubuntu 8 8
+win10 48516 35684
+ios_iphone 824 452
+androidoreo 2 2
+win7 12454 5332
+winxp 4 3
+macosx14 7 4
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 49
+msie9.0 2 1
+firefox74.0 2 0
+chrome96.0.4664.55 946 28
+chrome81.0.4044.129 2 2
+opera11.50 2 0
+firefox81.0 13 13
+Unknown 20 20
+chrome42.0.2311.90 2 2
+chrome62.0.3202.94 1 1
+chrome95.0.4638.84 89 12
+firefox84.0 6 5
+chrome75.0.3765.0 2 2
+chrome90.0.4430.72 1 1
+chrome80.0.3987.116 3 1
+firefox87.0 1 1
+chrome32.0.1667.0 2 0
+chrome73.0.3683.90 1 1
+safari 20 2
+firefox76.0 1 1
+chrome92.0.4515.159 8 8
+iphone 21 3
+chrome83.0.4103.97 33 33
+chrome84.0.4147.105 2 1
+firefox62.0 1 1
+chrome74.0.3729.169 5 5
+chrome34.0.1847.116 1 1
+chrome37.0.2049.0 1 1
+chrome79.0.3945.74 1 0
+chrome5.0.375.99 1 1
+netscape5.0 2 2
+firefox94.0 5736 2200
+firefox68.0 2 2
+firefox95.0 9471 3983
+chrome76.0.3809.132 3 3
+firefox89.0 1 1
+mozilla 26 8
+chrome96.0.4664.45 8448 7886
+chrome96.0.4664.110 28099 19316
+chrome89.0.4389.128 3 1
+firefox58.0 7 7
+chrome79.0.3945.130 2 2
+chrome35.0.3319.102 1 1
+chrome35.0.1916.47 2 2
+safari14.1.2 803 449
+chrome90.0.4430.85 4 4
+opera11.11 1 0
+chrome95.0.4638.69 698 698
+chrome96.0.4664.93 7456 6870
+chrome91.0.4472.114 21 11
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 8
+Mozilla/5.0_(compatible;_Dataprovider.com) 20211231211025
+Go_http_package 20211226220331
+GRequests/0.10 20211228122050
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20211231131746
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20211227223915
+Mozilla/5.0 20211202171733
+python-requests/2.26.0 20211212203225
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20211205131710
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 5
+Expanse_indexes_the_network_perimeters_of_our_customers._If_you_have_any_questions_or_concerns,_please_reach_out_to:_scaninfo@expanseinc.com 20211231131746
+NetSystemsResearch_studies_the_availability_of_various_services_across_the_internet._Our_website_is_netsystemsresearch.com 20211205131710
+python-requests/2.26.0 20211212203225
+GRequests/0.10 20211228122050
+Go_http_package 20211226220331
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 679 716
+From1 3 3
+From2 4 4
+From3 25 25
+From4 40882 61228
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_google_com_hk 2 2
+www_bing_com 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 5
+https://112.213.89.32 21 21
+http://cpanel.npptinminh.com 1 1
+http://webmail.npptinminh.com/wp-login.php 1 1
+https://mail.npptinminh.com 1 1
+http://112.213.89.32:80 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+303 24 0
+301 1 0
+307 554 0
+401 41 1357
+302 3 0
+403 28 34412
+404 4050 4632373
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 180
+/public/assets/jquery-file-upload/server/php/index.php 1 -
+/index.php/dashboard/images/pageserror/11.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/index.php/dashboard/images/pageserror/1.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/wordpress 2 http://www.npptinminh.com/wordpress
+/mt/mt-atom.cgi 4 yahoo.com
+/www/css/bootstrap-datepicker.min.css.map 28 -
+/www/css/images/forward_enabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/2018/ 1 http://mail.npptinminh.com/2018/
+/main/ 1 http://mail.npptinminh.com/main/
+/index.php/dashboard/images/pageserror/5.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/img/bg/pick_bg.jpg 9 https://www.npptinminh.com/index.php/dashboard
+/wp1/ 1 http://mail.npptinminh.com/wp1/
+/img/icon/gray_18/random.png 7 https://www.npptinminh.com/index.php/dashboard
+/sites/default/files/ 3 binance.com
+/blog/ 1 http://mail.npptinminh.com/blog/
+/2018 1 http://www.npptinminh.com/2018
+/main 2 http://www.npptinminh.com/main
+/wp 2 http://www.npptinminh.com/wp
+/img/icon/gray_shadow18/window.png 24 https://www.npptinminh.com/index.php/dashboard
+/index.php/img/icon/gray_shadow18/file.png 27 https://www.npptinminh.com/index.php/dashboard/
+/wordpress/ 1 http://mail.npptinminh.com/wordpress/
+/backup 2 http://www.npptinminh.com/backup
+/js/index.php 1 -
+/img/inner-shadow.png 1445 https://www.npptinminh.com/www/css/dataTables.css
+/index.php/img/icon/gray_18/shopping_basket.png 26 https://www.npptinminh.com/index.php/dashboard/
+/img/icon/gray_shadow18/spreadsheet.png 24 https://www.npptinminh.com/index.php/dashboard
+/mtos/mt-atom.cgi 2 yahoo.com
+/apple-touch-icon-precomposed.png 97 -
+/.well-known/security.txt 1 -
+/bak 1 http://www.npptinminh.com/bak
+/index.php/dashboard/images/pageserror/2.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/index.php/dashboard/css/zice.style.css 14 https://www.npptinminh.com/index.php/dashboard/page404
+/bak/ 1 http://mail.npptinminh.com/bak/
+/img/icon/color_18/attachment.png 2 https://www.npptinminh.com/index.php/dashboard
+/img/icon/gray_shadow18/location.png 24 https://www.npptinminh.com/index.php/dashboard
+/cms/mt-atom.cgi 2 yahoo.com
+/admin/controller/extension/extension/ 4 binance.com
+/wp-old 1 http://www.npptinminh.com/wp-old
+/old-wp/ 1 http://mail.npptinminh.com/old-wp/
+/2021 1 http://www.npptinminh.com/2021
+/apple-touch-icon-120x120.png 97 -
+/security.txt 1 -
+/uploads/ 4 binance.com
+/sitio 1 http://www.npptinminh.com/sitio
+/home/ 1 http://mail.npptinminh.com/home/
+/bac 1 http://www.npptinminh.com/bac
+/img/logo/logo_admin.png 8 https://www.npptinminh.com/index.php/dashboard
+/www/css/images/back_disabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/cgi/mt-atom.cgi 2 yahoo.com
+/img/icon/pass_.png 1 https://www.npptinminh.com/index.php/login
+/test 1 http://www.npptinminh.com/test
+/index.php/img/icon/gray_shadow18/window.png 27 https://www.npptinminh.com/index.php/dashboard/
+/www/css/loader1.png 1 -
+/www/css/images/desc.gif 55 https://www.npptinminh.com/index.php/dashboard
+/index.php/dashboard/components/effect/jquery-jrumble.js 25 https://www.npptinminh.com/index.php/dashboard/page404
+/images/icon/gray_18/spreadsheet.png 55 https://www.npptinminh.com/index.php/dashboard
+/bk/ 1 http://mail.npptinminh.com/bk/
+/www/css/images/search-white.png 55 https://www.npptinminh.com/index.php/dashboard
+/tmp/ 1 http://mail.npptinminh.com/tmp/
+/kcfinder/upload.php 1 -
+/bc 2 http://www.npptinminh.com/bc
+/www/img/avatar_staff/%7B%7Bstaff.avatar%7D%7D 2 https://www.npptinminh.com/index.php/dashboard
+/humans.txt 4 http://npptinminh.com/humans.txt
+/home 1 http://www.npptinminh.com/home
+/js/app.js 1 -
+/dashboard 1 https://www.npptinminh.com/index.php/dashboard/page404
+/www/components/uploadify/add.png 71 https://www.npptinminh.com/index.php/dashboard
+/img/icon/gray_shadow18/stats_lines.png 24 https://www.npptinminh.com/index.php/dashboard
+/img/icon/gray_18/shopping_basket.png 24 https://www.npptinminh.com/index.php/dashboard
+/test/ 1 http://mail.npptinminh.com/test/
+/install/ 1 http://mail.npptinminh.com/install/
+/index.php/dashboard/images/pageserror/9.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/img/icon/user_.png 1 https://www.npptinminh.com/index.php/login
+/site 1 http://www.npptinminh.com/site
+/www/css/DataTables-1.10.16/images/sort_desc_disabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/www/css/DataTables-1.10.16/images/sort_asc_disabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/index.php/login/wp-includes/wlwmanifest.xml 2 -
+/www/css/images/back_enabled_hover.png 55 https://www.npptinminh.com/index.php/dashboard
+/.env 4 http://www.npptinminh.com/.env
+/img/icon/gray_shadow18/abacus.png 24 https://www.npptinminh.com/index.php/dashboard
+/demo 1 http://www.npptinminh.com/demo
+/oldsite 2 http://www.npptinminh.com/oldsite
+/new-site/ 1 http://mail.npptinminh.com/new-site/
+/www/css/images/table-sort.png 55 https://www.npptinminh.com/index.php/dashboard
+/old-site/ 1 http://mail.npptinminh.com/old-site/
+/index.php/dashboard/images/pageserror/3.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/site/ 1 http://mail.npptinminh.com/site/
+/blog/mt-atom.cgi 2 yahoo.com
+/index.php/dashboard/js/jquery.cycle.all.js 23 https://www.npptinminh.com/index.php/dashboard/page404
+/demo/ 1 http://mail.npptinminh.com/demo/
+/wp/ 1 http://mail.npptinminh.com/wp/
+/www/ 1 https://www.npptinminh.com/www
+/assets/plugins/jquery-file-upload/server/php/index.php 1 -
+/%2532e%2532e/%2532e%2532e/%2532e%2532e/%2532e%2532e/%2532e%2532e/%2532e%2532e/%2532e%2532e/bin/sh 1 -
+/img/shadowForm.png 1 https://www.npptinminh.com/index.php/login
+/index.php/dashboard/images/pageserror/4.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/robots.txt 56 -
+/index.php/dashboard/images/tv.png 9 https://www.npptinminh.com/index.php/dashboard/page404
+/www/css/images/forward_enabled_hover.png 55 https://www.npptinminh.com/index.php/dashboard
+/index.php/img/icon/gray_18/list.png 25 https://www.npptinminh.com/index.php/dashboard/
+/index.php/dashboard/images/pageserror/6.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/wordpress/wp-login.php 2 http://npptinminh.com
+/index.php/undefined 11 https://www.npptinminh.com/index.php/dashboard
+/sitemap.xml 1 -
+/web/ 1 http://mail.npptinminh.com/web/
+/img/icon/gray_18/window.png 2 https://www.npptinminh.com/index.php/dashboard
+/img/top_bgrepeat.jpg 9 https://www.npptinminh.com/index.php/dashboard
+/public/plugins/jquery-file-upload/server/php/index.php 1 -
+/img/icon/gray_18/cabinet.png 24 https://www.npptinminh.com/index.php/dashboard
+/emergency.php 1 -
+/cms/ 1 http://mail.npptinminh.com/cms/
+/index.php/dashboard/images/pageserror/7.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/temp/ 1 http://mail.npptinminh.com/temp/
+/www/css/images/back_enabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/images/ 4 binance.com
+/.well-known/ 4 binance.com
+/www/css/images/asc.gif 55 https://www.npptinminh.com/index.php/dashboard
+/img/icon/color_18/zoom.png 9 https://www.npptinminh.com/index.php/dashboard
+/sito 1 http://www.npptinminh.com/sito
+/blog/wp-login.php 2 http://npptinminh.com
+/index.php/dashboard/dashboard.html 1 https://www.npptinminh.com/index.php/dashboard/page404
+/index.php/dashboard/images/pageserror/8.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/index.php/img/icon/gray_shadow18/location.png 27 https://www.npptinminh.com/index.php/dashboard/
+/files/ 4 binance.com
+/img/icon/gray_18/list.png 24 https://www.npptinminh.com/index.php/dashboard
+/demo/server/php/index.php 1 -
+/MT/mt-atom.cgi 4 yahoo.com
+/www/css/DataTables-1.10.16/images/sort_desc.png 55 https://www.npptinminh.com/index.php/dashboard
+/index.php/dashboard/images/pageserror/12.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/img/icon/gray_18/notepad.png 7 https://www.npptinminh.com/index.php/dashboard
+/index.php/img/icon/gray_shadow18/abacus.png 28 https://www.npptinminh.com/index.php/dashboard/
+/backup/ 1 http://mail.npptinminh.com/backup/
+/.vscode/ftp-sync.json 1 -
+/www/css/loader1.jpg 1 -
+/index.php/dashboard/components/tipsy/tipsy.css 14 https://www.npptinminh.com/index.php/dashboard/page404
+/2020/ 1 http://mail.npptinminh.com/2020/
+/www/css/loader1.html 65 https://www.npptinminh.com/index.php/dashboard
+/index.php/img/icon/gray_shadow18/stats_lines.png 26 https://www.npptinminh.com/index.php/dashboard/
+/wp-login.php 28 http://npptinminh.com/wp-login.php
+/public/assets/plugins/jquery-file-upload/server/php/index.php 1 -
+/wp-content/plugins/capability-manager-enhanced/common/js/admin.dev.js 1 -
+/v2/ 1 http://mail.npptinminh.com/v2/
+/wp/wp-login.php 2 http://npptinminh.com
+/apple-touch-icon-120x120-precomposed.png 97 -
+/environment 2 -
+/dev/ 1 http://mail.npptinminh.com/dev/
+/index.php/dashboard/components/tipsy/jquery.tipsy.js 25 https://www.npptinminh.com/index.php/dashboard/page404
+/2020 1 http://www.npptinminh.com/2020
+/s_ne.php 1 -
+/bk 2 http://www.npptinminh.com/bk
+/img/menu_bg.jpg 8 https://www.npptinminh.com/index.php/dashboard
+/www/css/images/search-dark.png 55 https://www.npptinminh.com/index.php/dashboard
+/new/ 1 http://mail.npptinminh.com/new/
+/img/logform.png 1 https://www.npptinminh.com/index.php/login
+/img/loadder/loader_green.gif 1 https://www.npptinminh.com/index.php/login
+/old/ 1 http://mail.npptinminh.com/old/
+/www/css/DataTables-1.10.16/images/sort_both.png 55 https://www.npptinminh.com/index.php/dashboard
+/mt-atom.cgi 4 yahoo.com
+/index.php/img/icon/gray_18/random.png 24 https://www.npptinminh.com/index.php/dashboard/
+/wp2/ 1 http://mail.npptinminh.com/wp2/
+/index.php/img/icon/gray_shadow18/spreadsheet.png 27 https://www.npptinminh.com/index.php/dashboard/
+/old-site 2 http://www.npptinminh.com/old-site
+/img/accbg.png 8 https://www.npptinminh.com/index.php/dashboard
+/2019 1 http://www.npptinminh.com/2019
+/apple-touch-icon.png 97 -
+/wp-admin/css/ 4 binance.com
+/index.php/dashboard/js/jquery.min.js 13 https://www.npptinminh.com/index.php/dashboard/page404
+/img/icon/gray_shadow18/file.png 24 https://www.npptinminh.com/index.php/dashboard
+/index.php/img/icon/gray_18/cabinet.png 25 https://www.npptinminh.com/index.php/dashboard/
+/index.php/dashboard/images/pageserror/10.jpg 9 https://www.npptinminh.com/index.php/dashboard/page404
+/www/css/images/bg.gif 55 https://www.npptinminh.com/index.php/dashboard
+/assets/jquery-file-upload/server/php/index.php 1 -
+/v1/ 1 http://mail.npptinminh.com/v1/
+/www/css/bootstrap.min.css.map 28 -
+/2019/ 1 http://mail.npptinminh.com/2019/
+/www/css/DataTables-1.10.16/images/sort_asc.png 55 https://www.npptinminh.com/index.php/dashboard
+/old 2 http://www.npptinminh.com/old
+/www/css/images/forward_disabled.png 55 https://www.npptinminh.com/index.php/dashboard
+/new 2 http://www.npptinminh.com/new
+/ads.txt 6 http://npptinminh.com/ads.txt
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 182
+1.53.42.81 19394 24698 159240708 20211224100406
+113.22.70.79 10248 12152 81613451 20211231171921
+113.22.38.227 7884 10222 62016911 20211209182631
+118.71.51.5 2582 3064 19635487 20211203001120
+115.73.130.173 378 859 2567200 20211231231032
+115.72.30.186 250 606 2236921 20211204201315
+115.72.177.167 135 740 2146395 20211214165005
+123.23.140.118 107 3977 12803111 20211222225922
+14.230.236.128 65 833 5788794 20211220225743
+14.237.113.195 57 2899 9150011 20211221182215
+14.230.126.237 56 259 566863 20211211182944
+113.166.57.184 36 46 495374 20211229214619
+171.247.187.122 27 927 4337260 20211206220310
+103.199.56.118 16 16 27989 20211228221050
+103.199.57.69 15 16 20517 20211228221333
+103.199.33.33 15 19 88837 20211221193913
+116.110.42.177 13 90 629407 20211231154127
+1.53.192.235 11 11 25457 20211229114633
+103.199.56.226 10 10 13015 20211229091428
+103.199.56.27 10 10 27537 20211221231947
+103.199.56.233 9 22 46371 20211216182648
+103.199.56.183 9 9 16545 20211229212252
+103.199.33.6 9 39 15659 20211221202357
+8.21.11.206 8 88 578492 20211206220218
+103.199.56.202 8 8 17000 20211223215525
+35.160.229.181 1 1 1346 20211207201047
+103.199.57.154 4 4 26115 20211214095535
+69.197.185.45 1 1 1346 20211208033104
+221.2.163.231 2 2 2692 20211202171733
+103.199.32.32 1 1 1146 20211224104303
+18.236.185.172 1 1 1346 20211208192727
+45.129.18.59 1 1 0 20211230055518
+51.254.49.108 1 1 37939 20211225171615
+108.61.165.97 1 1 1346 20211227184503
+93.158.92.215 1 1 1346 20211217065327
+54.191.190.195 1 1 1346 20211202193551
+35.86.127.21 1 1 1346 20211223190915
+54.78.32.216 1 1 1346 20211213091443
+18.202.24.160 1 1 1346 20211212213734
+51.254.49.110 1 1 37939 20211227133242
+42.83.147.34 3 3 4038 20211215162642
+162.215.240.160 1 1 4218 20211224172719
+18.236.247.74 1 1 1346 20211225211024
+65.21.206.42 2 2 2692 20211220103419
+116.202.100.71 1 1 1346 20211226073110
+34.220.241.53 1 1 1346 20211224191030
+103.199.57.166 7 7 19283 20211229203540
+50.17.141.62 1 9 1346 20211211033853
+8.218.69.175 1 1 1346 20211219005548
+34.252.232.215 1 1 1346 20211211122244
+92.118.160.37 3 3 46363 20211226220331
+103.199.57.187 1 1 1146 20211223090410
+115.73.134.63 4 4 5896 20211217180122
+122.10.101.80 1 1 1146 20211202121842
+92.118.160.61 1 1 4218 20211205142834
+103.199.56.165 5 5 13081 20211217124357
+52.37.159.73 1 1 1346 20211229192035
+103.199.57.70 3 3 3438 20211220192953
+54.36.113.142 1 1 1346 20211219190857
+103.199.56.130 7 39 23906 20211204161913
+167.94.138.115 2 2 2692 20211219232834
+144.217.135.222 1 19 164903 20211231211022
+103.199.32.47 6 22 127908 20211206081959
+34.252.93.89 1 1 1346 20211211224007
+36.110.211.67 0 1 1116 
+103.199.56.62 2 2 1146 20211218213900
+5.248.227.97 1 1 4218 20211214131919
+51.89.204.93 1 1 12232 20211202022553
+176.165.34.9 1 1 0 20211211115515
+103.199.32.185 2 2 0 20211224211303
+149.56.150.23 1 1 4218 20211231203024
+107.172.137.111 2 2 0 20211202153152
+159.203.176.82 1 1 12237 20211218011923
+103.199.57.160 4 4 9437 20211216182748
+198.204.238.212 1 1 1346 20211221120640
+67.205.167.31 1 1 1346 20211203045433
+45.114.251.190 1 1 1346 20211227140406
+103.199.56.186 2 2 2292 20211222103636
+195.154.61.206 1 1 37939 20211227115623
+20.151.211.225 2 2 24448 20211219044209
+47.243.15.50 1 1 1346 20211219005542
+54.216.218.253 1 1 1346 20211213152600
+194.9.191.20 1 1 1346 20211209213148
+49.213.78.31 0 4 16866 
+3.249.121.172 1 1 1346 20211212025645
+45.129.18.21 1 1 0 20211202074113
+3.250.144.201 1 1 1346 20211211213819
+34.222.214.121 1 1 1346 20211227195015
+171.13.14.83 1 1 1146 20211226144110
+35.85.219.141 1 1 1346 20211228192218
+195.154.62.232 1 1 4218 20211227134017
+20.106.224.166 4 4 5384 20211212203225
+54.244.56.115 1 1 1346 20211227194934
+62.210.5.253 1 1 37939 20211225153444
+103.199.32.23 2 2 2292 20211222210927
+34.215.41.177 1 1 1346 20211205193236
+36.110.211.69 1 2 3666 20211226091759
+54.220.102.27 1 1 1346 20211212180019
+54.78.23.179 1 1 1346 20211211145546
+103.199.56.232 1 1 1146 20211202193333
+63.35.225.48 1 1 1346 20211205072952
+35.162.138.214 1 1 1346 20211217191134
+54.245.18.22 1 1 1346 20211230192037
+185.191.127.215 1 1 12222 20211216111313
+62.210.10.77 1 1 4218 20211225154411
+103.199.32.42 4 27 127614 20211213142956
+69.197.185.46 1 1 1346 20211228161308
+34.241.119.12 1 1 1346 20211213105925
+212.83.146.233 1 1 37939 20211225144747
+91.208.197.96 1 1 1346 20211208052459
+103.199.33.174 1 1 1146 20211225104412
+103.199.32.25 4 4 5900 20211213234114
+137.226.113.44 5 5 6730 20211230201222
+149.56.150.246 1 1 1146 20211231211019
+185.191.34.215 1 1 0 20211220231827
+52.50.216.83 1 1 1346 20211208141642
+39.106.98.188 3 3 4038 20211223132659
+54.202.137.175 1 1 1346 20211202193608
+35.166.58.249 1 1 1346 20211218192348
+54.246.8.89 1 1 1346 20211213065239
+34.212.244.184 1 1 1346 20211208192702
+103.199.56.25 1 1 1146 20211206094045
+35.87.211.90 1 1 1346 20211217191152
+207.46.13.45 0 1 2320 
+159.89.139.69 1 1 0 20211206035127
+34.86.35.7 1 1 37939 20211231131746
+103.199.57.2 1 1 1146 20211220193651
+93.158.91.205 1 1 1346 20211204132936
+171.13.14.75 1 1 1146 20211226144139
+185.27.99.121 1 1 1346 20211207134914
+103.199.56.221 1 1 5574 20211204170159
+103.199.57.75 1 1 1146 20211228171005
+103.199.56.64 2 2 1146 20211226195238
+167.248.133.41 2 2 24444 20211227223915
+63.35.182.72 1 1 1346 20211212054919
+103.121.208.197 1 1 1146 20211203131557
+34.96.130.1 1 1 37927 20211207131154
+109.239.58.107 1 1 1346 20211229050742
+52.11.66.26 1 1 1346 20211224191147
+34.221.242.69 1 1 1346 20211211194632
+54.191.162.230 1 1 1346 20211209195301
+162.142.125.194 1 1 1346 20211221235553
+34.217.75.194 1 1 1346 20211218192443
+34.210.23.100 1 1 1346 20211201191950
+103.199.56.217 5 5 7233 20211229184656
+20.121.215.166 1 1 1346 20211210050845
+52.211.96.217 1 1 1346 20211213133749
+54.190.166.118 1 1 1346 20211225210833
+103.199.32.45 7 8 11364 20211213235144
+59.175.144.19 1 1 1346 20211228122050
+92.118.160.1 1 1 37927 20211206010556
+54.149.176.108 1 1 1346 20211220192435
+65.21.206.46 1 1 1346 20211216124250
+54.184.38.212 1 1 1346 20211221194301
+35.85.49.19 1 1 1346 20211220192452
+103.199.56.229 2 2 9031 20211217192418
+212.41.9.227 1 1 1346 20211211125501
+34.245.197.221 1 1 1346 20211212070237
+34.86.35.8 1 1 37927 20211204100925
+35.164.11.208 1 1 1346 20211209195232
+103.199.57.229 5 5 5745 20211214221338
+54.194.94.62 1 1 1346 20211211054436
+157.245.131.135 1 1 1346 20211203045203
+34.222.136.52 2 2 2692 20211223190858
+3.133.132.179 3 13 108325 20211207023713
+81.17.29.13 1 1 4218 20211211190403
+115.72.178.182 2 2 2292 20211224175722
+47.243.235.114 1 1 1346 20211219005542
+34.241.151.78 1 1 1346 20211213223054
+54.74.11.245 1 1 4218 20211206070927
+34.253.240.128 1 1 1346 20211212123738
+74.201.28.126 2 2 2692 20211212110420
+92.118.160.41 2 2 8436 20211226034250
+3.250.200.211 1 1 1346 20211214015817
+130.255.166.90 1 1 1346 20211227080609
+103.199.56.60 1 1 1146 20211225212310
+34.214.186.134 1 1 1346 20211222190329
+35.88.228.205 1 1 1346 20211211194613
+34.220.121.210 1 1 1346 20211226192111
+54.195.114.58 1 1 1346 20211211212431
+103.199.56.237 5 5 12862 20211222103030
+35.87.47.137 1 1 1346 20211223190342
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20211201 1159 1284 8341853 4
+20211202 1511 1904 11750348 12
+20211203 1553 2167 10789462 5
+20211204 1164 1517 8657893 12
+20211205 76 76 622130 5
+20211206 1428 2911 16938660 11
+20211207 1289 1670 11440932 7
+20211208 1307 1681 10854777 7
+20211209 1350 2008 10990429 7
+20211210 1476 2015 11074088 3
+20211211 1162 1532 9291425 18
+20211212 128 220 1176647 12
+20211213 1651 2057 13479580 14
+20211214 1873 2253 15726681 10
+20211215 1854 2655 15719114 3
+20211216 1445 1806 11398763 7
+20211217 1558 1792 11206823 8
+20211218 1326 1563 10109646 7
+20211219 12 12 34816 8
+20211220 2119 3317 20195655 12
+20211221 1970 6319 29931222 11
+20211222 1849 6170 26978079 8
+20211223 1558 1937 12946682 11
+20211224 1545 2085 11630276 9
+20211225 925 1185 8446159 12
+20211226 370 386 1449551 12
+20211227 1587 1773 13693279 12
+20211228 1912 2639 15003983 11
+20211229 1953 2161 15199192 15
+20211230 1604 1857 12760295 5
+20211231 879 1024 7655354 8
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+0s-30s 178
+5mn-15mn 14
+15mn-30mn 9
+2mn-5mn 9
+30s-2mn 19
+30mn-1h 16
+1h+ 41
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 184
+/index.php/products/getAllWithUnit 4263 34344849 0 2
+/index.php/customers/getAll 3919 182707841 0 0
+/index.php/staff/getAll 3917 1694332 1 0
+/index.php/Debit/customerDebit 3520 63727 0 0
+/index.php/order/popoverData 2289 786809 0 9
+/index.php/order/addOrder 2048 18432 0 0
+/index.php/order/orderDelivered 1919 589106 0 0
+/index.php/order 1867 14571366 1 13
+/index.php/order/statusOrder 1621 7813906 1 7
+/index.php/dashboard 1334 3215231 8 1
+/index.php/order/managementOrder 998 2939071 0 2
+/index.php/order/divideOrder 966 5116187 1 12
+/index.php/order/get 957 387070 0 0
+/index.php/order/update 921 50234 0 0
+/index.php/order/getOrderByShipment 891 1606464 0 8
+/index.php/warehouse_wholesale 853 2239395 2 23
+/index.php/promotion/getByOrder 817 141337 0 0
+/index.php/dashboard/ 745 1805193 0 0
+/index.php/order/createShipment 605 15184 0 2
+/index.php/order/getByTruck 507 54468 0 2
+/index.php/login 498 619404 244 170
+/index.php/order/updateStatusShipment 452 17132 0 0
+/index.php/bill_detail/viewShipmentBills 326 1290230 0 2
+/index.php/order/saveDevided 303 0 0 0
+/index.php/order/updateWarehouse 303 202822 0 0
+/index.php/order/deleteOrder/27391 1 0 0 0
+/index.php/order/deleteOrder/27515 1 0 0 0
+/www/partials/promotion/temp-promotion-board.html 13 15353 0 0
+/index.php/order/deleteOrder/28985 1 0 0 0
+/www/img/pen_icon.html 18 21024 0 1
+/index.php/bill_detail/viewImportDetail 5 2025 0 0
+/index.php/order/deleteOrder/28982 1 0 0 0
+/index.php/order/addOldDebitToOrder 12 0 0 0
+/index.php/promotion/create 5 55 0 0
+/index.php/order/deleteOrder/29294 1 0 0 0
+/ 90 607524 18 16
+/index.php/customers/editCustomer 52 0 0 0
+/index.php/bill_detail 91 63686 0 3
+/index.php/order/removeOldDebitFromOrder 2 0 0 0
+/index.php/order/deleteOrder/28828 1 0 0 0
+/.env 1 12222 1 0
+/www/partials/temp-create-product.html 14 24178 0 0
+/index.php/order/deleteOrder/28290 1 0 0 0
+/index.php/products/get 62 22570 0 0
+/index.php/order/deleteOrder/27285 1 0 0 0
+/index.php/order/deleteOrder/29334 1 0 0 0
+/index.php/order/deleteOrder/27664 1 0 0 0
+/index.php/staff/getPosition 2 172 0 0
+/index.php/order/deleteOrder/29278 1 0 0 0
+/index.php/StatisticController/Sales 190 709071 4 6
+/index.php/order/deleteOrder/29366 1 0 0 0
+/index.php/order/deleteOrder/29024 1 0 0 0
+/index.php/order/deleteOrder/28886 1 0 0 0
+/index.php/order/deleteOrder/29066 1 0 0 0
+/www/partials/temp-staff-create.html 2 1970 0 0
+/index.php/order/deleteOrder/28307 1 0 0 0
+/index.php/staff 4 1798 0 0
+/index.php/promotion/delete 21 0 0 0
+/www/partials/statistic/temp-bill-list.html 9 3712 0 0
+/www/fonts/glyphicons-halflings-regular.woff2 54 627360 0 0
+/index.php/promotion/get 101 22774 0 0
+/www/img/ui/progressOverlay.html 18 21024 0 0
+/www/partials/temp-shipment.html 1 853 0 0
+/www/partials/temp-warehouse-sale.html 1 2929 0 0
+/index.php/order/deleteOrder/27823 1 0 0 0
+/index.php/order/deleteOrder/28761 1 0 0 0
+/index.php/order/deleteOrder/28147 1 0 0 0
+/index.php/order/deleteOrder/29076 1 0 0 0
+/index.php/StatisticController/getSaleCommissionMetaData 1 565 0 0
+/index.php/order/deleteOrder/27711 1 0 0 0
+/www/partials/temp-customers.html 23 29392 0 0
+/index.php/warehouses 38 5320 1 0
+/index.php/order/doiShipment 54 0 0 0
+/index.php/debit/totalDebit 123 100346 0 1
+/index.php/order/deleteOrder/28170 1 0 0 0
+/index.php/order/deleteOrder/28471 1 0 0 0
+/index.php/order/deleteOrder/29340 1 0 0 0
+/index.php/warehouse_wholesale/saveAddWholesale 244 1952 0 0
+/index.php/order/deleteOrder/28069 1 0 0 0
+/index.php/order/deleteOrder/27667 1 0 0 0
+/index.php/order/deleteOrder/28520 1 0 0 0
+/www/partials/temp-user-list.html 1 887 0 0
+/www/partials/temp-import-detail.html 1 698 0 0
+/www/partials/temp-order-status.html 41 150708 0 0
+/index.php/order/deleteOrder/29134 1 0 0 0
+/www/partials/temp-order-list.html 79 52304 0 0
+/index.php/bill_detail/popoverData 239 90820 0 2
+/www/partials/temp-staff.html 2 1496 0 0
+/index.php/stock_transfer/getExport 49 223927 0 0
+/index.php/order/deleteOrder/28095 1 0 0 0
+/index.php/order/deleteOrder/27890 1 0 0 0
+/www/partials/temp-order-divide.html 74 120012 0 0
+/index.php/order/deleteOrder/28092 1 0 0 0
+/index.php/order/deleteOrder/28440 1 0 0 0
+/index.php/order/deleteOrder/27577 1 0 0 0
+/index.php/order/deleteOrder/27602 1 0 0 0
+/www/img/ui/progress.html 18 21024 0 0
+/index.php/customers/createCustomer 87 696 0 0
+/www/partials/temp-order-create.html 178 262260 0 0
+/index.php/order/deleteOrder/29275 1 0 0 0
+/index.php/debit/pay 45 0 0 0
+/www/partials/temp-total-debit.html 8 6440 0 0
+/index.php/customers/deleteCustomer 7 55 0 0
+/index.php/order/deleteOrder/27803 1 0 0 0
+/www/partials/temp-product.html 19 14592 0 0
+/index.php/dashboard/page404 13 14452 0 0
+/index.php/order/deleteOrder/27791 1 0 0 0
+/index.php/order/deleteOrder/28670 1 0 0 0
+/index.php/order/deleteOrder/28852 1 0 0 0
+/index.php/order/deleteOrder/28148 1 0 0 0
+/www/js/angular/angular.min.js.map 28 8028440 0 0
+/index.php/order/deleteOrder/28164 1 0 0 0
+/www/partials/statistic/temp-sales-statistic.html 31 37380 0 0
+/index.php/promotion/getList 35 12574 0 0
+/index.php/order/deleteOrder/28282 1 0 0 0
+/index.php/order/deleteOrder/28354 1 0 0 0
+/index.php/order/deleteOrder/29488 1 0 0 0
+/index.php/staff/detailStaff 1 147 0 0
+/index.php/order/deleteOrder/27583 1 0 0 0
+/index.php/ 77 186561 0 0
+/index.php/order/deleteOrder/28089 1 0 0 0
+/www/partials/promotion/temp-promotion-create.html 15 32595 0 0
+/index.php/shipment/saveShipmentPaymentDetail 204 0 0 0
+/index.php/warehouse_wholesale/addWholesale 274 12440456 0 0
+/index.php/order/xoaShipment 61 0 0 0
+/wp-admin/css/ 1 12232 1 1
+/index.php/debit/totalLiabilityDetail 4 685 0 0
+/index.php/order/deleteOrder/27955 1 0 0 0
+/index.php/StatisticController/getBillList 19 7729 0 1
+/index.php/order/deleteOrder/29044 1 0 0 0
+/index.php/order/processReturnHalfWarehouse 38 760 0 0
+/index.php/order/deleteOrder/29332 1 0 0 0
+/index.php/order/deleteOrder/28435 1 0 0 0
+/index.php/staff/createStaff 1 6 0 0
+/index.php/products/editProduct 56 0 0 0
+/index.php/products/createProductView 68 461805 0 0
+/index.php/warehouse_wholesale_sale 298 12931950 0 0
+/index.php/order/deleteOrder/29062 1 0 0 0
+/index.php/products 120 1902243 0 1
+/index.php/order/deleteOrder/28577 1 0 0 0
+/www/partials/temp-bill-detail.html 36 38185 0 0
+/index.php/order/xoaChuyen 11 0 0 0
+/index.php/order/deleteOrder/29006 1 0 0 0
+/index.php/order/returnWarehouse 21 0 0 0
+/www/partials/salesCommission.html 1 1066 0 0
+/index.php/order/deleteOrder/28171 1 0 0 0
+/index.php/order/deleteOrder/28775 1 0 0 0
+/www/partials/temp-warehouses-export.html 25 51432 1 0
+/index.php/order/deleteOrder/28335 1 0 0 0
+/index.php/order/deleteOrder/28028 1 0 0 0
+/www/partials/temp-order-management.html 33 57120 0 0
+/wp-login.php 1 12237 1 1
+/index.php/order/deleteOrder/28658 1 0 0 0
+/www/partials/temp-total-liability-detail.html 1 488 0 0
+/index.php/order/deleteOrder/28938 1 0 0 0
+/index.php/products/createProduct 4 0 0 0
+/index.php/order/deleteOrder/27757 1 0 0 0
+/index.php/debit/totalDebitDetail 5 1135 0 0
+/index.php/order/deleteOrder/28697 1 0 0 0
+/index.php/order/deleteOrder/27673 1 0 0 0
+/index.php/staff/editStaff 1 0 0 0
+/index.php/Products/getLastBuyPrice 274 319570 0 0
+/index.php/order/returnHalfWarehouse 39 13328 0 0
+/index.php/customers 270 8503368 0 0
+/www/partials/temp-total-debit-detail.html 4 2044 0 0
+/index.php/customers/getCustomer 52 9101 0 0
+/index.php/promotion/update 18 198 0 0
+/www/partials/temp-warehouse.html 107 85760 0 0
+/index.php/order/deleteOrder/27584 1 0 0 0
+/index.php/order/deleteOrder/28853 1 0 0 0
+/index.php/login/check_login 205 4914 0 0
+/index.php/order/deleteOrder/29150 1 0 0 0
+/index.php/StatisticController/getSalesCommissions 1 11242 0 0
+/index.php/debit/payLiability 13 0 0 0
+/index.php/order/deleteOrder/29151 1 0 0 0
+/index.php/products/getUnits 68 16388 0 0
+/www/partials/temp-warehouse-wholesale.html 10 18060 0 0
+/index.php/order/deleteOrder/28453 1 0 0 0
+/index.php/order/deleteOrder/28721 2 0 0 0
+/index.php/order/deleteOrder/28437 1 0 0 0
+/index.php/order/deleteOrder/28859 1 0 0 0
+/www/partials/temp-bill.html 38 99256 1 0
+/index.php/user 1 175 0 0
+/index.php/order/deleteOrder/27457 1 0 0 0
+END_SIDER
