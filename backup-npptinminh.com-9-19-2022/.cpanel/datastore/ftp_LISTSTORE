@@ -1,1 +1,0 @@
-{"status":1,"mode":"simple","error":0,"exit_code":0,"statusmsg":"Ran adminbin Cpanel/ftp/LISTSTORE","version":"2.4","action":"fetch","data":[{"type":"main","homedir":"/home/npptinmi","user":"npptinmi"},{"homedir":"/etc/apache2/logs/domlogs/npptinmi","type":"logaccess","user":"npptinmi_logs"}],"timeout":0}

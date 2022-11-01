@@ -1,5 +1,0 @@
-2020-08-24T17:50:21Z: Processing 00000000/5f43fddd622341...
-2020-08-24T17:50:21Z:   doing Cpanel::UserTasks::VersionControl::create
-2020-08-24T17:50:23Z:   FAILURE: (XID p22pvv) “/usr/local/cpanel/3rdparty/bin/git” reported error code “128” when it ended:  at /usr/local/cpanel/Cpanel/VersionControl/git.pm line 845.
-
-2020-08-24T17:50:23Z: Queue empty, terminating

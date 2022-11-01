@@ -1,5 +1,0 @@
-Running command: /usr/local/cpanel/3rdparty/bin/git clone --origin=origin https://github.com/NghiHo/webtin.git /home/npptinmi/git
-
-Cloning into '/home/npptinmi/git'...
-fatal: could not read Username for 'https://github.com': No such device or address
-/home/npptinmi/git may exist, and may need to be cleaned up.
