@@ -148,6 +148,9 @@
                                 <!-- <th>
                                     <div class="th_wrapp">Di động</div>
                                 </th> -->
+                                <th>
+                                    <div class="th_wrapp"></div>
+                                </th>
                                 <th ng-if="isAdminRole()">
                                     <div class="th_wrapp">Edit</div>
                                 </th>
@@ -160,6 +163,7 @@
                                 <td>{{item.store_name}}</td>
                                 <td>{{item.address}}</td>
                                 <td>{{item.phone_home[0]}}</td>
+                                <td>{{item.phone_home[1]}}</td>
                                 <!-- <td>{{item.phone_mobile[0]}}</td> -->
                                 <td ng-if="isAdminRole()">
                   <span>

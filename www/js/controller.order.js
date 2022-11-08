@@ -4,7 +4,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
         function ($scope, $http, $location, showAlert, renderSelect, $filter, productService, $timeout) {
             $scope.selectingorderproducts = [];
             $scope.init = function () {
-                console.log('init7: ');
+                console.log('init13: ');
                 $scope.currentId = $location.search().i;
                 $scope.lstOrderProduct = [];
                 $scope.totalQuantity = 0;
@@ -65,19 +65,19 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         $('.list_order_product .product_order:last-child .selectpicker').on("changed.bs.select", function() {
                             $(this).parents('tr').find("td:nth-child(2) input").focus();
                         });
+                        // chọn kh
+                        // $("#select-customer").on("changed.bs.select", function() {
+                        //     setTimeout(function (){
+                        //         $("#select-user").selectpicker('toggle');
+                        //     })
+                        // });
+                        
+                        // $("#select-user").on("changed.bs.select", function() {
+                        //     setTimeout(function (){
+                        //         $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
+                        //     })
 
-                        $("#select-customer").on("changed.bs.select", function() {
-                            setTimeout(function (){
-                                $("#select-user").selectpicker('toggle');
-                            })
-                        });
-
-                        $("#select-user").on("changed.bs.select", function() {
-                            setTimeout(function (){
-                                $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
-                            })
-
-                        });
+                        // });
                     })
                 });
 
@@ -113,7 +113,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 popupWin.document.close();
             }
             $scope.selectCustomer = function () {
-                console.log('select');
+                console.log('select12');
                 if ($scope.selectedCus) {
                     $scope.currentCustomer = setCustomer();
                     if($scope.selectedCus) {
@@ -121,7 +121,16 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             $scope.currentUserDebit = data.debit;
                         })
                     }
+                    setTimeout(function (){
+                        $("#select-user").selectpicker('toggle');
+                    })
                 }
+            };
+            $scope.selectSaler = function () {
+                setTimeout(function (){
+                     $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
+                })
+               //console.log('selec saler123');
             };
             $scope.selectUnit = function () {
                 var target_id = $(event.currentTarget).closest('tr').data('id');
@@ -240,33 +249,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         $('#select-user').val("");
                         $('#select-user').selectpicker("refresh");
                         $scope.saveprocessing = false;
-                        $timeout(function () {
-                            $(".selectpicker").selectpicker();
-                            // $(".selectpicker").focus(function(){
-                            //     $(this).selectpicker('toggle');
-                            // });
-    
-                            $('.selectpicker').on("shown.bs.select", function() {
-                                $(this).parent().find(".bs-searchbox input").focus();
-                            });
-    
-                            $('.list_order_product .product_order:last-child .selectpicker').on("changed.bs.select", function() {
-                                $(this).parents('tr').find("td:nth-child(2) input").focus();
-                            });
-    
-                            $("#select-customer").on("changed.bs.select", function() {
-                                setTimeout(function (){
-                                    $("#select-user").selectpicker('toggle');
-                                })
-                            });
-    
-                            $("#select-user").on("changed.bs.select", function() {
-                                setTimeout(function (){
-                                    $('.list_order_product .product_order:last-child .selectpicker').selectpicker('toggle');
-                                })
-    
-                            });
-                        })
+                        
                     }
                 }).error(function (data, status) {
                     console.log(data);
@@ -465,6 +448,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
             }
 
             function setCustomer() {
+                console.log('customer: ', $scope.lstCustomer)
                 if ($scope.lstCustomer != undefined) {
                     for (var i = 0; i < $scope.lstCustomer.length; i++) {
                         if ($scope.lstCustomer[i].id == $scope.selectedCus) {
