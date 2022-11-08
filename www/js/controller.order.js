@@ -866,12 +866,9 @@ angular.module('order.controllers', ['ui.bootstrap'])
 
             }
             $scope.divideProduct = function (shouldReload) {
-                const checkInventory = $scope.saveOrderForDivideProduct ();
-                if(checkInventory == 0)
-                    return;
-                    $http.post(config.base + '/order/updateWarehouse?ship_id=' + $stateParams.shipment_id, $scope.shipment)
+                $scope.saveOrder();
+                $http.post(config.base + '/order/updateWarehouse?ship_id=' + $stateParams.shipment_id, $scope.shipment)
                     .success(function (data, status) {
-                        console.log('done')
                         showAlert.showSuccess(3000, 'Lưu thành công');
                         if (shouldReload) {
                             setTimeout(function () {
@@ -881,8 +878,6 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             $location.path('order-management');
                         }
                     })
-    
-               
             };
 
             $scope.productQuantityChange = function (orderIndex, proIndex) {
