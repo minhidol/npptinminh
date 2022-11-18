@@ -1115,7 +1115,6 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 showAlert.showError(3000, "Chưa in hóa đơn!");
                 return false;
             }
-
             //change button and css
             switch (status) {
                 case 0:
@@ -1466,8 +1465,11 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 responseType: 'json'
             }).success(function (data, status) {
                 $scope.printData = [];
+                for(var i = 0; i < data.length; i++){
+                    var phone_string = JSON.parse(data[i].customer_phone);
+                    data[i].list_phone_customer = phone_string.join(',');
+                }
                 $scope.printData = data;
-                //console.log('shipment: ', $scope.shipments);
                 var currentshipment = null;
                 for(var i=0; i<$scope.shipments.length;i++){
                     if ($scope.shipments[i].id == shipment_id){

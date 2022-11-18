@@ -671,6 +671,10 @@ class Order extends MY_Controller
             //update inventory
             $orders = $this->order->getByShipment($shipment_id);
             $this->load->model('order_detail_model', 'order_detail');
+            // add fix-minh
+            $this->load->model('check_use_trigger_model');
+            $this->check_use_trigger_model->update(['content_update' => 'update_unit'], ['table_name' => 'warehouse_wholesale']);
+            //
             foreach ($orders as $order) {
                 $order_detail = $this->order_detail->get_order_detail($order['id']);
                 foreach ($order_detail as $product) {
@@ -681,7 +685,10 @@ class Order extends MY_Controller
                     }
                 }
             }
-
+            // add fix-minh
+            $this->db->query('call update_date_inventory_not_trigger()');
+            $this->check_use_trigger_model->update(['content_update' => ''], ['table_name' => 'warehouse_wholesale']);
+            //
             //inventory of promotion
             $this->load->model('Warehouses_model');
             foreach ($listPromotionProduct as $orderId => $promotionProduct) {
@@ -736,7 +743,7 @@ class Order extends MY_Controller
 
         $this->shipments->update(['status' => "$status", 'index' => $lastIndex, 'date' => $shipmentDate], ['id' => $shipment_id]);
 
-        #update order
+        // #update order
         $this->order->update(['status' => 1], ['shipment_id' => $shipment_id]);
 
         $this->db->trans_complete();

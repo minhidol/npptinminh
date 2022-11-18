@@ -314,3 +314,7 @@ switch (ENVIRONMENT)
  * And away we go...
  */
 require_once BASEPATH.'core/CodeIgniter.php';
+
+require __DIR__ .'/vendor/predis/predis/src/Autoloader.php';
+
+Predis\Autoloader::register();
