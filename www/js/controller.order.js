@@ -4,7 +4,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
         function ($scope, $http, $location, showAlert, renderSelect, $filter, productService, $timeout) {
             $scope.selectingorderproducts = [];
             $scope.init = function () {
-                console.log('init13: ');
+                //console.log('init13: ');
                 $scope.currentId = $location.search().i;
                 $scope.lstOrderProduct = [];
                 $scope.totalQuantity = 0;
@@ -113,7 +113,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 popupWin.document.close();
             }
             $scope.selectCustomer = function () {
-                console.log('select12');
+                //console.log('select12');
                 if ($scope.selectedCus) {
                     $scope.currentCustomer = setCustomer();
                     if($scope.selectedCus) {
@@ -448,7 +448,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
             }
 
             function setCustomer() {
-                console.log('customer: ', $scope.lstCustomer)
+                //console.log('customer: ', $scope.lstCustomer)
                 if ($scope.lstCustomer != undefined) {
                     for (var i = 0; i < $scope.lstCustomer.length; i++) {
                         if ($scope.lstCustomer[i].id == $scope.selectedCus) {
