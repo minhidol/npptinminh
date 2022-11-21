@@ -63,8 +63,8 @@
                             </table>
                         </div>
                     </div>
-                    <!-- <div class='section'>
-                        <label>Điện thoại di động</label>
+                    <div class='section'>
+                        <!-- <label>Điện thoại di động</label> -->
                         <div>
                             <table ng-if="customer.phone_mobile != 0 && customer.phone_mobile"
                                    data-class="list_phone_mobile" class="list_phone_mobile">
@@ -93,7 +93,7 @@
                                 </tr>
                             </table>
                         </div>
-                    </div> -->
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
@@ -143,14 +143,14 @@
                                     <div class="th_wrapp">Địa chỉ</div>
                                 </th>
                                 <th>
-                                    <div class="th_wrapp">Điện thoại</div>
+                                    <div class="th_wrapp">Điện thoại 1</div>
+                                </th>
+                                <th>
+                                    <div class="th_wrapp">Điện thoại 2</div>
                                 </th>
                                 <!-- <th>
-                                    <div class="th_wrapp">Di động</div>
-                                </th> -->
-                                <th>
                                     <div class="th_wrapp"></div>
-                                </th>
+                                </th> -->
                                 <th ng-if="isAdminRole()">
                                     <div class="th_wrapp">Edit</div>
                                 </th>
@@ -163,8 +163,8 @@
                                 <td>{{item.store_name}}</td>
                                 <td>{{item.address}}</td>
                                 <td>{{item.phone_home[0]}}</td>
-                                <td>{{item.phone_home[1]}}</td>
-                                <!-- <td>{{item.phone_mobile[0]}}</td> -->
+                                <!-- <td>{{item.phone_home[1]}}</td> -->
+                                <td>{{item.phone_mobile[0]}}</td>
                                 <td ng-if="isAdminRole()">
                   <span>
                     <span class="tip">
