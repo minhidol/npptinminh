@@ -58,3 +58,16 @@ ERROR - 2022-11-22 15:05:40 --> Query error: Expression #3 of SELECT list is not
 WHERE `product_id` = '1'
 ERROR - 2022-11-22 15:05:40 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'npptinmi_websys.w.unit' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: UPDATE `warehouse_wholesale` SET `quantity` = 374, `processed` = 0
 WHERE `id` = '19544'
+ERROR - 2022-11-22 21:39:08 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'npptinmi_websys'@'localhost' (using password: YES) /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-11-22 21:39:08 --> Unable to connect to the database
+ERROR - 2022-11-22 21:39:08 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'npptinmi_websys'@'localhost' (using password: YES) /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-11-22 21:39:08 --> Unable to connect to the database
+ERROR - 2022-11-22 21:39:13 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'npptinmi_websys'@'localhost' (using password: YES) /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-11-22 21:39:13 --> Unable to connect to the database
+ERROR - 2022-11-22 21:39:13 --> Severity: error --> Exception: Call to a member function real_escape_string() on bool /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 391
+ERROR - 2022-11-22 21:39:17 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'npptinmi_websys'@'localhost' (using password: YES) /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 201
+ERROR - 2022-11-22 21:39:17 --> Unable to connect to the database
+ERROR - 2022-11-22 21:39:17 --> Severity: error --> Exception: Call to a member function real_escape_string() on bool /Users/minhnguyen/Documents/works/npptinminh/staging-dev-npptin/system/database/drivers/mysqli/mysqli_driver.php 391
+CUSTOM - 2022-11-22 21:39:55 --> Staff::index - /index.php/staff: null
+CUSTOM - 2022-11-22 21:40:00 --> Staff::editStaff - /index.php/staff/editStaff?id=1: {"id":"1","name":"Sang Ace3451","cmnd":"","dob":"0000-00-00","avatar":null,"fatherland":"H\u1ed3 Ch\u00ed Minh","address_permanent":"","address_temporary":"","salary":"0","start_day":"0000-00-00","end_day":null,"sex":"1","position":"1","active":"0"}
+CUSTOM - 2022-11-22 21:40:00 --> Staff::index - /index.php/staff: null
