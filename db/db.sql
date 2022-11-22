@@ -1,5 +1,6 @@
 use npptinmi_websys;
 
+--1.	Thêm table check_use_trigge, và dữ liệu
 -- table check function co su dung trigger hay khong
 create TABLE `check_use_trigger` (
   `id` bigint(7) unsigned zerofill NOT NULL AUTO_INCREMENT,
@@ -13,6 +14,8 @@ insert into check_use_trigger(table_name, content_update)
 values(
 'warehouse_wholesale', ''
 );
+
+-- 2.	Thêm store update_date_inventory_not_trigger
 
 /*!50003 DROP PROCEDURE IF EXISTS `update_date_inventory_not_trigger` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -49,7 +52,7 @@ DELIMITER ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 
-
+--3. Alter stoẻ update_date_inventory
 /*!50003 DROP PROCEDURE IF EXISTS `update_date_inventory` */;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
 /*!50003 SET @saved_cs_results     = @@character_set_results */ ;
@@ -87,4 +90,18 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+
+--4.	Inhoadon chậm: Thêm index
+ALTER TABLE npptinmi_websys.order_detail ADD INDEX(order_id);
+
+--5.
+ALTER TABLE table_name DROP INDEX index_name;
+
+--6.	Hiện trạng đơn hàng xử lý lâu:
+ALTER TABLE npptinmi_websys.order ADD INDEX(delivery, shipment_id);
+
+
+--7.	Tạo đơn hàng chậm
+ALTER TABLE bill ADD INDEX(customer_id, debit, ignor_debit);
+--8.	Sửa giá chậm tương tự 1,2,3
 
