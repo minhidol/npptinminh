@@ -114,8 +114,12 @@ angular.module('order.controllers', ['ui.bootstrap'])
             }
             $scope.selectCustomer = function () {
                 //console.log('select12');
+
                 if ($scope.selectedCus) {
                     $scope.currentCustomer = setCustomer();
+                    //console.log('data: ', $scope.currentCustomer.phone_home)
+                    //var phone_string = JSON.parse($scope.currentCustomer.phone_home);
+                    $scope.currentCustomer.list_phone_customer = $scope.currentCustomer.phone_home.join(',');   
                     if($scope.selectedCus) {
                         $http.get(config.base + '/Debit/customerDebit?i=' + $scope.selectedCus).success(function (data, status) {
                             $scope.currentUserDebit = data.debit;
