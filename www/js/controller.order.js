@@ -252,14 +252,14 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         $('#select-customer').selectpicker("refresh");
                         $('#select-user').val("");
                         $('#select-user').selectpicker("refresh");
-                        $scope.saveprocessing = false;
+                        //$scope.saveprocessing = false;
                         
                     }
                 }).error(function (data, status) {
                     console.log(data);
                     $scope.saveprocessing = false;
                 });
-                $scope.saveprocessing = false;
+                //$scope.saveprocessing = false;
             };
 
             $scope.checkPromotion = function () {
