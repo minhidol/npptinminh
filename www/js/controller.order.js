@@ -4,13 +4,13 @@ angular.module('order.controllers', ['ui.bootstrap'])
         function ($scope, $http, $location, showAlert, renderSelect, $filter, productService, $timeout) {
             $scope.selectingorderproducts = [];
             $scope.init = function () {
-                //console.log('init13: ');
+                console.log('init13: ');
                 $scope.currentId = $location.search().i;
                 $scope.lstOrderProduct = [];
                 $scope.totalQuantity = 0;
                 $scope.lstUser = [];
                 $scope.currentUserDebit = 0;
-                $scope.saveprocessing = false;
+                
                 $scope.addMoreProcessing = 0;
                 $scope.isLoadedCustomer = false;
                 var d = new Date();
@@ -18,6 +18,8 @@ angular.module('order.controllers', ['ui.bootstrap'])
                 setDefaultValue();
                 $http.get(config.base + '/customers/getAll').then(function (response) {
                     $scope.lstCustomer = response.data;
+                    console.log('customer');
+                    $scope.saveprocessing = false;
                     $timeout(function () {
                         $("#select-customer").selectpicker();
                         $timeout(function () {
@@ -29,6 +31,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                     })
                 });
                 $http.get(config.base + '/staff/getAll').then(function (response) {
+                    console.log('staff: ');
                     $scope.lstUser = response.data.user;
                     $scope.isLoadedCustomer = true;
                     $timeout(function () {
@@ -53,6 +56,7 @@ angular.module('order.controllers', ['ui.bootstrap'])
                         });
                     }
                     $timeout(function () {
+                        console.log('time out');
                         $(".selectpicker").selectpicker();
                         // $(".selectpicker").focus(function(){
                         //     $(this).selectpicker('toggle');
@@ -247,16 +251,19 @@ angular.module('order.controllers', ['ui.bootstrap'])
                             window.location.href = config.base + '/dashboard#order-list';
                         }, 1000);
                     } else {
+                        console.log('-----------------------');
                         $scope.init();
                         $('#select-customer').val("");
                         $('#select-customer').selectpicker("refresh");
                         $('#select-user').val("");
                         $('#select-user').selectpicker("refresh");
+                        console.log('init');
                         //$scope.saveprocessing = false;
                         
                     }
                 }).error(function (data, status) {
                     console.log(data);
+                    alert('Tạo đơn thất bại');
                     $scope.saveprocessing = false;
                 });
                 //$scope.saveprocessing = false;
