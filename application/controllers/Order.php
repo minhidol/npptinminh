@@ -574,7 +574,7 @@ class Order extends MY_Controller
 
         $this->db->trans_start();
         $error = [];
-        if ($status == 1) {
+        if ($status == 1 && $shipment->status == 0) {
             //Get promotions
             $this->load->model('ProductUnitModel');
             $this->load->model('PromotionDetail', 'Promotion');
