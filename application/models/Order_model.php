@@ -96,7 +96,7 @@ class Order_model extends MY_model {
 	    $from = date('Y-m-d 00:00:00', strtotime($date));
 	    $to = date('Y-m-d 23:59:59', strtotime($date));
     	$query = "SELECT od.product_id, od.quantity, o.created, o.shipment_id FROM `order` o JOIN order_detail od ON o.id=od.order_id
-WHERE o.status <>2 AND o.created >= '{$from}' AND 0.created = '{$to}'";
+WHERE o.status <>2 AND o.created >= '{$from}' AND 0.created <= '{$to}'";
     	return $this->db->query($query)->result_array();
     }
 
