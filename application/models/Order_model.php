@@ -3,6 +3,12 @@
 class Order_model extends MY_model {
     protected $table_name = 'order';
     
+    public function checkOrderExist($input){
+        $from = date('Y-m-d 00:00:00');
+        return $this->db->query("SELECT * FROM `order` o WHERE o.customer_id = '{$input['customer_id']}' AND o.total_price = '{$input['total_price']}' AND o.saler = '{$input['saler']}' AND o.note = '{$input['note']}' ORDER BY created DESC
+        LIMIT 2")
+                        ->result();
+    }
     public function get_all(){
         return $this->db->query('select *
                                 from `'.$this->table_name.'` as o
@@ -90,7 +96,7 @@ class Order_model extends MY_model {
 	    $from = date('Y-m-d 00:00:00', strtotime($date));
 	    $to = date('Y-m-d 23:59:59', strtotime($date));
     	$query = "SELECT od.product_id, od.quantity, o.created, o.shipment_id FROM `order` o JOIN order_detail od ON o.id=od.order_id
-WHERE o.status <>2 AND o.created >= '{$from}' AND 0.created <= '{$to}'";
+WHERE o.status <>2 AND o.created >= '{$from}' AND 0.created = '{$to}'";
     	return $this->db->query($query)->result_array();
     }
 

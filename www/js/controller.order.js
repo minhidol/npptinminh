@@ -244,21 +244,18 @@ angular.module('order.controllers', ['ui.bootstrap'])
                     data: $scope.order,
                     responseType: 'json'
                 }).success(function (data, status) {
-                    //console.log('data: ', data);
+                    console.log('data: ', data);
                     showAlert.showSuccess(3000, 'Lưu thành công');
                     if ( $scope.currentId ) {
                         setTimeout(function(){
                             window.location.href = config.base + '/dashboard#order-list';
                         }, 1000);
                     } else {
-                        console.log('-----------------------');
                         $scope.init();
                         $('#select-customer').val("");
                         $('#select-customer').selectpicker("refresh");
                         $('#select-user').val("");
                         $('#select-user').selectpicker("refresh");
-                        console.log('init');
-                        //$scope.saveprocessing = false;
                         
                     }
                 }).error(function (data, status) {

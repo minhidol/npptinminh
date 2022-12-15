@@ -268,19 +268,39 @@ class Order extends MY_Controller
         $order = $this->input->json();
 
         $order_details = [];
+        $check_quality_exist = 0;
         foreach ($order->orders as $key => $row) {
+            if($row->quantity == null){
+                $check_quality_exist = $check_quality_exist + 1;
+            }
             if (isset($order_details[$row->product_id])) {
                 $order_details[$row->product_id]->quantity += $row->quantity;
             } else {
                 $order_details[$row->product_id] = $row;
             }
         }
-
+        if($check_quality_exist != 0)
+            return;
+       
         $this->load->model('order_detail_model', 'order_detail');
         $order_id = $this->order->insert(['customer_id' => $order->customer_id,
             'total_price' => $order->total_price,
             'note' => $order->note,
             'saler' => $order->saler]);
+        $check_order_exist = $this->order->checkOrderExist(['customer_id' => $order->customer_id,
+            'total_price' => $order->total_price,
+            'note' => $order->note,
+            'saler' => $order->saler]);
+        //echo json_encode(['order' => $order_details]);
+        if(sizeof($check_order_exist) == 2){
+            $minutes = abs(strtotime($check_order_exist[0]->created) - strtotime($check_order_exist[1]->created)) / 60;
+            //echo json_encode(['minutes' => $minutes, 'res' => $check_order_exist]);
+            if($minutes < 1){
+                $this->db->delete('order', array('id' => $check_order_exist[0]->id)); 
+                return;
+            }
+           
+        }
         $order_code = $this->convertBillCode($order_id, 'CH');
         $this->order->update(['order_code' => $order_code], ['id' => $order_id]);
         foreach ($order_details as $key => $row) {
