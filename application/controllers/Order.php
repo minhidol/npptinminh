@@ -295,7 +295,7 @@ class Order extends MY_Controller
         if(sizeof($check_order_exist) == 2){
             $minutes = abs(strtotime($check_order_exist[0]->created) - strtotime($check_order_exist[1]->created)) / 60;
             //echo json_encode(['minutes' => $minutes, 'res' => $check_order_exist]);
-            if($minutes < 1){
+            if($minutes < 4){
                 $this->db->delete('order', array('id' => $check_order_exist[0]->id)); 
                 return;
             }

@@ -1,0 +1,51 @@
+<div ng-app="dashboard" ng-controller="listBillByCategory">
+    <div class="onecolumn">
+        <div class="header">
+            <span><span class="ico gray notepad title"></span>Danh sách các hoá đơn</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="content">
+        <div class="row" style="margin-top: 10px">
+            <div class="col-md-12 col-ms-12" style="padding-left: 0;text-align: center;">
+                       Khách hàng: {{address}}
+            </div>
+            <div class="col-md-12 col-ms-12" style="padding-left: 0;text-align: center;">
+                Ngành hàng: <span style="color: red">{{type_name}}</span> 
+            </div>
+            <div class="col-md-12 col-ms-12" style="padding-left: 0;text-align: center;">
+               Thời gian: {{formatDate(from_date)}} -> {{formatDate(to_date)}}
+            </div>
+
+        </div>
+        <div class="table-wrapper">
+            <table class="table table-bordered display">
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>Ngày</td>
+                        <td>SL</td>
+                        <td>Tổng tiền</td>
+                    </tr>
+                </thead>
+                <tbody ng-if="data.length > 0">
+                <tr ng-repeat="(key, bill) in data">
+                    <td>{{key + 1}}</td>
+                    <td>
+                        <span>
+                            <span class="tip">
+                              <a href="#view-detail-bill" id="{{bill.date_bill}}" class="Detail" ng-click="detailBillByDate($event)" title="Detail">
+                                {{formatDate(bill.date_bill)}}
+                              </a>
+                            </span>
+                          </span>
+                    </td>
+                    <td>{{bill.quantity_sum}}</td>
+                    <td>{{numberWithCommas(bill.total)}}</td>
+                   
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

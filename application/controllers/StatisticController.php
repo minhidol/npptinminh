@@ -192,6 +192,103 @@ class StatisticController extends MY_Controller
 
     }
 
+    public function getClientsCommissions() {
+        $from =  $this->input->get('from');
+        $to =  $this->input->get('to');
+        $id_type_product = $this->input->get('id_type_product');
+        if ( empty( $from) || empty( $to)){
+            echo json_encode([]);
+        } else {
+            $this->load->model('products_type_model', 'product_type');
+            $this->load->model('products_model', 'product');
+            $this->load->model('bill_model');
+            $this->load->helper('Constants');
+            $this->load->model('Staff_model');
+
+            $from = date('Y-m-d 00:00:00', strtotime($from));
+            $to = date('Y-m-d 23:59:59', strtotime($to));
+            // Lay danh sach bill tu ngay den ngay
+            $commissionData = $this->bill_model->getClientsCommissionStatistic($from, $to, $id_type_product);
+            usort($commissionData, function ($a, $b) {
+                if ($a['total'] < $b['total']) return 1;
+                if ($a['total'] > $b['total']) return -1;
+                return 0;
+            });
+            echo json_encode([
+                'from_date' => $from,
+                'to_date' => $to,
+                'id_type' => $id_type_product,
+                'list_bill' => $commissionData
+            ]);
+        }
+    }
+
+    public function getListBillByTypeProduct() {
+        $from =  $this->input->get('from');
+        $to =  $this->input->get('to');
+        $id_type_product = $this->input->get('id_type_product');
+        $customer_id = $this->input->get('customer_id');
+        
+        if ( empty( $from) || empty( $to)){
+            echo json_encode([]);
+        } else {
+            $this->load->model('products_type_model', 'product_type');
+            $this->load->model('products_model', 'product');
+            $this->load->model('bill_model');
+            $this->load->helper('Constants');
+            $this->load->model('Staff_model');
+            $from = date('Y-m-d 00:00:00', strtotime($from));
+            $to = date('Y-m-d 23:59:59', strtotime($to));
+            // // Lay danh sach bill tu ngay den ngay
+            $commissionData = $this->bill_model->getListBillByType($from, $to, $id_type_product, $customer_id);
+            // // usort($commissionData, function ($a, $b) {
+            // //     if ($a['total'] < $b['total']) return 1;
+            // //     if ($a['total'] > $b['total']) return -1;
+            // //     return 0;
+            // // });
+            echo json_encode([
+                'list_bill' => $commissionData
+            ]);
+            //  echo json_encode([
+            //     'list_bill' => [$from, $to, $id_type_product, $customer_id]
+            // ]);
+        }
+
+    }
+
+    public function getBillDetailByDate() {
+        $from =  $this->input->get('from');
+        $to =  $this->input->get('to');
+        $id_type_product = $this->input->get('id_type_product');
+        $customer_id = $this->input->get('customer_id');
+        $date_search = $this->input->get('date_search');
+        if ( empty( $from) || empty( $to)){
+            echo json_encode([]);
+        } else {
+            $this->load->model('products_type_model', 'product_type');
+            $this->load->model('products_model', 'product');
+            $this->load->model('bill_model');
+            $this->load->helper('Constants');
+            $this->load->model('Staff_model');
+            $from = date('Y-m-d 00:00:00', strtotime($date_search));
+            $to = date('Y-m-d 23:59:59', strtotime($date_search));
+            // // Lay danh sach bill tu ngay den ngay
+            $commissionData = $this->bill_model->getDetailBillByDate($from, $to, $id_type_product, $customer_id, $date_search);
+            // // usort($commissionData, function ($a, $b) {
+            // //     if ($a['total'] < $b['total']) return 1;
+            // //     if ($a['total'] > $b['total']) return -1;
+            // //     return 0;
+            // // });
+            // echo json_encode([
+            //     'list_bill' => $commissionData
+            // ]);
+             echo json_encode([
+                'list_bill' => $commissionData
+            ]);
+        }
+
+    }
+
     public function getSaleCommissionMetaData() {
         $this->load->model('products_type_model', 'product_type');
         $this->load->model('Staff_model');

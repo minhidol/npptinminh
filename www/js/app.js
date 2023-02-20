@@ -467,6 +467,33 @@ var dashboard = angular.module('dashboard', [
             },
             controller: 'BillList'
         })
+        .state('clients-commission', {
+            url: "/clients-commission",
+            views: {
+                "content": {
+                    templateUrl:  ROLE !== 1? '/www/partials/temp-permission-denied.html' : '/www/partials/client-commission.html'
+                }
+            },
+            controller: 'printingDebitController'
+        })
+        .state('view-clients-commission', {
+            url: "/view-clients-commission",
+            views: {
+                "content": {
+                    templateUrl: ROLE == 1? '/www/partials/temp-view-clients-bill.html' : '/www/partials/temp-permission-denied.html'
+                }
+            },
+            controller: 'printingDebitController'
+        })
+        .state('view-detail-bill', {
+            url: "/view-detail-bill",
+            views: {
+                "content": {
+                    templateUrl: ROLE == 1? '/www/partials/temp-view-detail-bill.html' : '/www/partials/temp-permission-denied.html'
+                }
+            },
+            controller: 'printingDebitController'
+        })
 })
     .service('productService', function ($http) {
         this.getProducts = function () {

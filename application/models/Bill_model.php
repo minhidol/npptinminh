@@ -191,6 +191,46 @@ class Bill_model extends MY_model
         return $this->db->query($sql)->result_array();
     }
 
+    public function getClientsCommissionStatistic( $from, $to, $id_type_product ) {
+        $sql = "SELECT b.customer_id, c.address, SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '{$from}' AND b.created <= '{$to}' AND bd.commission_type is not null AND p.product_type = $id_type_product
+                GROUP BY b.customer_id, c.address
+                ";
+        return $this->db->query($sql)->result_array();
+    }
+
+    public function getListBillByType( $from, $to, $id_type_product, $customer_id ) {
+        $sql = "SELECT b.customer_id, c.address, c.name, pt.name as 'name_type', date(b.created) as 'date_bill', SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                WHERE b.created >= '{$from}' AND b.created <= '{$to}' AND bd.commission_type is not null AND p.product_type = $id_type_product AND b.customer_id = $customer_id
+                GROUP BY b.customer_id, c.address, c.name, pt.name, date(b.created)
+                ORDER BY date(b.created)
+                ";
+        return $this->db->query($sql)->result_array();
+    }
+
+    public function getDetailBillByDate( $from, $to, $id_type_product, $customer_id ) {
+        $sql = "SELECT b.customer_id, c.address, p.name as 'product_name', b.bill_code, c.name, pt.name as 'name_type', bd.price, date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total', b.created, pu.name as 'unit_product'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                JOIN product_unit pu ON pu.id = p.sale_unit
+                WHERE  b.created >= '{$from}' AND b.created <= '{$to}' AND bd.commission_type is not null AND p.product_type = $id_type_product AND b.customer_id = $customer_id
+                ORDER BY date(b.created)
+                ";
+        return $this->db->query($sql)->result_array();
+    }
+
     public function getListBillOfSaleCommission($from, $to, $productId, $saler, $type)
     {
         $sql = "select b.*, cus.name as customer_name   

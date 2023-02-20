@@ -1,0 +1,45 @@
+CUSTOM - 2023-02-20 09:24:03 --> Order::index - /index.php/order: null
+ERROR - 2023-02-20 10:07:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+' at line 7 - Invalid query: SELECT b.customer_id, c.address, c.name, pt.name as 'name_type', date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                WHERE  b.created >= '1970-01-01 00:00:00' AND b.created <= '1970-01-01 23:59:59' bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 10:07:42 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 230
+ERROR - 2023-02-20 10:08:38 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+' at line 7 - Invalid query: SELECT b.customer_id, c.address, c.name, pt.name as 'name_type', date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                WHERE  b.created >= '2022-04-15 00:00:00' AND b.created <= '2022-04-15 23:59:59' bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 10:08:38 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 230
+ERROR - 2023-02-20 10:09:30 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+' at line 7 - Invalid query: SELECT b.customer_id, c.address, c.name, pt.name as 'name_type', date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                WHERE  b.created >= '2022-04-15 00:00:00' AND b.created <= '2022-04-15 23:59:59' bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 10:09:30 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 230
+ERROR - 2023-02-20 14:07:41 --> Query error: Unknown column 'undefined' in 'where clause' - Invalid query: SELECT b.customer_id, c.address, c.name, pt.name as 'name_type', date(b.created) as 'date_bill', SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                WHERE b.created >= '2022-03-28 00:00:00' AND b.created <= '2023-02-14 23:59:59' AND bd.commission_type is not null AND p.product_type = undefined AND b.customer_id = 1673
+                GROUP BY b.customer_id, c.address, c.name, pt.name, date(b.created)
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 14:07:41 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 217

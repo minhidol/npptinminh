@@ -1,0 +1,76 @@
+ERROR - 2023-02-15 09:39:56 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:56 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:39:58 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:58 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:39:58 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:58 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:39:59 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:59 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:39:59 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:59 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:39:59 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:39:59 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:00 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:00 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:20 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id, c.address from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:20 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:41 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:41 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:42 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:42 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:42 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:42 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:42 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:42 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:42 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:42 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 09:40:54 --> Query error: Table 'npptinmi_websys.customer' doesn't exist - Invalid query: SELECT bd.*, b.saler, b.customer_id from bill_detail bd JOIN bill b ON bd.bill_id = b.id JOIN customer c ON c.id = b.customer_id WHERE b.created >= '2021-12-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 09:40:54 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 196
+ERROR - 2023-02-15 15:56:46 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:46 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:47 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:47 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:47 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:47 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:47 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:47 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:47 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:47 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:47 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:47 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:48 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:48 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200
+ERROR - 2023-02-15 15:56:48 --> Query error: Table 'npptinmi_websys.product' doesn't exist - Invalid query: SELECT bd.*, b.saler 
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN product d ON bd.product_id = d.id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null
+ERROR - 2023-02-15 15:56:48 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 200

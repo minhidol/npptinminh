@@ -1,0 +1,64 @@
+ERROR - 2023-02-16 13:52:05 --> Query error: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'npptinmi_websys.bd.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT b.customer_id, c.address, bd.*
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 12
+                GROUP BY b.customer_id, c.address
+                
+ERROR - 2023-02-16 13:52:05 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 203
+ERROR - 2023-02-16 13:53:50 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'npptinmi_websys.b.customer_id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 12
+                
+ERROR - 2023-02-16 13:53:50 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 202
+ERROR - 2023-02-16 13:54:06 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'npptinmi_websys.b.customer_id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 12
+                
+ERROR - 2023-02-16 13:54:06 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 202
+ERROR - 2023-02-16 13:54:15 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'npptinmi_websys.b.customer_id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 12
+                
+ERROR - 2023-02-16 13:54:15 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 202
+ERROR - 2023-02-16 13:54:16 --> Query error: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'npptinmi_websys.b.customer_id'; this is incompatible with sql_mode=only_full_group_by - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2022-06-05 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 12
+                
+ERROR - 2023-02-16 13:54:16 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 202
+ERROR - 2023-02-16 14:08:57 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY b.customer_id, c.address' at line 7 - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2021-10-04 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 
+                GROUP BY b.customer_id, c.address
+                
+ERROR - 2023-02-16 14:08:57 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 203
+ERROR - 2023-02-16 14:09:12 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY b.customer_id, c.address' at line 7 - Invalid query: SELECT b.customer_id, c.address, SUM(bd.quantity) as 'quantity_sum', SUM(bd.quantity*bd.price) as 'total'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.id
+                JOIN customers c ON c.id = b.customer_id
+                WHERE b.created >= '2021-10-04 00:00:00' AND b.created <= '2023-02-15 23:59:59' AND bd.commission_type is not null AND p.product_type = 
+                GROUP BY b.customer_id, c.address
+                
+ERROR - 2023-02-16 14:09:12 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 203
+CUSTOM - 2023-02-16 14:15:12 --> Order::index - /index.php/order: null
+CUSTOM - 2023-02-16 14:31:37 --> Order::index - /index.php/order: null
+CUSTOM - 2023-02-16 14:31:44 --> Order::index - /index.php/order: null
+CUSTOM - 2023-02-16 15:18:21 --> Order::index - /index.php/order: null
+CUSTOM - 2023-02-16 15:18:51 --> Order::index - /index.php/order: null
