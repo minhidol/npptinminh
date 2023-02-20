@@ -1369,6 +1369,7 @@ angular.module('dashboard.controllers', ['ui.bootstrap'])
     .controller('billDetailController', ['$scope', '$http', '$stateParams', '$location', function ($scope, $http, $stateParams, $location) {
         console.log('load bill detail');
         $scope.url = config.base + '/bill_detail?id=' + $stateParams.id + '&type=' + $stateParams.type;
+        console.log('url: ', $scope.url)
         $scope.init = function () {
             $http({
                 method: 'GET',

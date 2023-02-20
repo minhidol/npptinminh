@@ -43,3 +43,51 @@ ERROR - 2023-02-20 14:07:41 --> Query error: Unknown column 'undefined' in 'wher
                 ORDER BY date(b.created)
                 
 ERROR - 2023-02-20 14:07:41 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 217
+ERROR - 2023-02-20 16:20:28 --> Query error: Unknown column 'p.idtemptemp' in 'on clause' - Invalid query: SELECT b.customer_id, c.address, p.name as 'product_name', b.bill_code, c.name, pt.name as 'name_type', bd.price, date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total', b.created, pu.name as 'unit_product'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.idtemptemp
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                JOIN product_unit pu ON pu.id = p.sale_unit
+                WHERE  b.created >= '2022-06-05 00:00:00' AND b.created <= '2022-06-05 23:59:59' AND bd.commission_type is not null AND p.product_type = 1 AND b.customer_id = 1259
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 16:20:28 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 231
+ERROR - 2023-02-20 16:20:34 --> Query error: Unknown column 'p.idtemptemp' in 'on clause' - Invalid query: SELECT b.customer_id, c.address, p.name as 'product_name', b.bill_code, c.name, pt.name as 'name_type', bd.price, date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total', b.created, pu.name as 'unit_product'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.idtemptemp
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                JOIN product_unit pu ON pu.id = p.sale_unit
+                WHERE  b.created >= '2022-06-05 00:00:00' AND b.created <= '2022-06-05 23:59:59' AND bd.commission_type is not null AND p.product_type = 1 AND b.customer_id = 1259
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 16:20:34 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 231
+ERROR - 2023-02-20 16:21:01 --> Query error: Unknown column 'p.idtemptemp' in 'on clause' - Invalid query: SELECT b.customer_id, c.address, p.name as 'product_name', b.bill_code, c.name, pt.name as 'name_type', bd.price, date(b.created) as 'date_bill', bd.quantity as 'quantity_sum', bd.quantity*bd.price as 'total', b.created, pu.name as 'unit_product'
+                from bill_detail bd 
+                JOIN bill b ON bd.bill_id = b.id 
+                JOIN products p ON bd.product_id = p.idtemptemp
+                JOIN customers c ON c.id = b.customer_id
+                JOIN products_type pt ON pt.id = p.product_type
+                JOIN product_unit pu ON pu.id = p.sale_unit
+                WHERE  b.created >= '2022-07-07 00:00:00' AND b.created <= '2022-07-07 23:59:59' AND bd.commission_type is not null AND p.product_type = 4 AND b.customer_id = 1258
+                ORDER BY date(b.created)
+                
+ERROR - 2023-02-20 16:21:01 --> Severity: error --> Exception: Call to a member function result_array() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_model.php 231
+CUSTOM - 2023-02-20 16:23:55 --> Order::index - /index.php/order: null
+ERROR - 2023-02-20 16:43:18 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 - Invalid query: SELECT  `b`.`id` AS `id`,  `b`.`bill_id` AS `billbill_detail_id`, `b`.`product_id` AS `product_id`,
+        `b`.`quantity` AS `quantity`, `b`.`price` AS `price`, `p`.`name` AS `product_name`, `u`.`name` AS `unit_name`
+        FROM ((`bill_detail` `b`
+        LEFT JOIN `products` `p` ON ((`b`.`product_id` = `p`.`id`)))
+        LEFT JOIN `product_unit` `u` ON ((`p`.`primary_unit` = `u`.`id`)))
+        WHERE b.bill_id=
+ERROR - 2023-02-20 16:43:18 --> Severity: error --> Exception: Call to a member function result() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_detail_model.php 18
+ERROR - 2023-02-20 16:45:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 - Invalid query: SELECT  `b`.`id` AS `id`,  `b`.`bill_id` AS `billbill_detail_id`, `b`.`product_id` AS `product_id`,
+        `b`.`quantity` AS `quantity`, `b`.`price` AS `price`, `p`.`name` AS `product_name`, `u`.`name` AS `unit_name`
+        FROM ((`bill_detail` `b`
+        LEFT JOIN `products` `p` ON ((`b`.`product_id` = `p`.`id`)))
+        LEFT JOIN `product_unit` `u` ON ((`p`.`primary_unit` = `u`.`id`)))
+        WHERE b.bill_id=
+ERROR - 2023-02-20 16:45:10 --> Severity: error --> Exception: Call to a member function result() on bool /Users/minhnguyen/Documents/works/npptinminh/npptinminh/application/models/Bill_detail_model.php 18
