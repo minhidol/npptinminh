@@ -35,7 +35,7 @@
                         <span>
                             <span class="tip">
                               <a href='#bill-detail/wholesale/{{bill.bill_id}}' id="{{bill.date_bill}}" class="Detail" ng-click="detailBillByDate($event)" title="Detail">
-                                {{bill.date_bill}}
+                                {{printDateValid(formatDate(bill.date_bill), key, data)}}
                               </a>
                             </span>
                           </span>

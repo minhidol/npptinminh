@@ -266,9 +266,27 @@ angular.module('statistic.controllers', ['ui.bootstrap'])
              });
             
         };
+        $scope.printDateValid = function(date, index, arr_bill){
+            //console.log({date, index, arr_bill})
+            let count = 0;
+            for(let i = 0; i < index; i++){
+                if($scope.formatDate(arr_bill[i].bill_date) == date){
+                    count++;
+                }
+               // console.log($scope.formatDate(arr_bill[i].date_bill))
+            }
+            //return 1;
+            if(count > 0){
+                date += ` (${count + 1})`
+            }
+           
+            return date;
+            
+        }
         $scope.numberWithCommas = function(x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
+       
         $scope.formatDate = function(x){
             const today = new Date(x);
             const yyyy = today.getFullYear();
