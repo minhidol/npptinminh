@@ -39,5 +39,11 @@ class Warehousing_model extends MY_model
         $row->detail = $this->ci->product_buy->get_by_warehousing_id($id);
         return $row;
     }
+
+    public function checkWarehousingExist($input){
+        return $this->db->query("SELECT * FROM `warehousing` w WHERE w.price = '{$input['price']}' AND w.debit = '{$input['debit']}' AND w.partner_id = '{$input['partner_id']}' ORDER BY created DESC
+        LIMIT 2")
+                        ->result();
+    }
 }
 

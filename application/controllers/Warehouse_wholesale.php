@@ -159,13 +159,31 @@ class Warehouse_wholesale extends MY_Controller
     {
         $wholesale = $this->input->json();
 
-        $this->db->trans_start();
+       
         #insert warehousing
         $this->load->model('warehousing_model');
+        //
+
+       // $this->db->trans_start();
         $warehousing_id = $this->warehousing_model->insert(['price' => $wholesale->total_bill,
             'debit' => $wholesale->total_bill - $wholesale->actual,
             'partner_id' => $wholesale->partner]);
         #insert product_buy_price
+         // check warehousing exists
+         $check_warehousing_exist = $this->warehousing_model->checkWarehousingExist(['price' => $wholesale->total_bill,
+         'debit' => $wholesale->total_bill - $wholesale->actual,
+         'partner_id' => $wholesale->partner]);
+         //echo json_encode(['warehousing' => json_encode($check_warehousing_exist)]);
+         if(sizeof($check_warehousing_exist) == 2){
+             $minutes = abs(strtotime($check_warehousing_exist[0]->created) - strtotime($check_warehousing_exist[1]->created)) / 60;
+            // echo json_encode(['minutes' => $minutes, 'res' => $check_order_exist]);
+             if($minutes < 1){
+                 $this->db->delete('warehousing', array('id' => $check_warehousing_exist[0]->id)); 
+                 echo json_encode($warehousing_id);
+                 return;
+             }
+         }
+         //
         $currentdate = date('Y-m-d H:i:s');
         foreach ($wholesale->buy_price as $item => $value) {
             $unit_primary = $this->product_sale->get_unit_primary($value->product_id);
@@ -193,7 +211,7 @@ class Warehouse_wholesale extends MY_Controller
             $this->wholesale->insert($inventory);
 //            }
         }
-        $this->db->trans_complete();
+        //$this->db->trans_complete();
         echo json_encode($warehousing_id);
     }
 
