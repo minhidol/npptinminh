@@ -254,9 +254,27 @@ angular.module('statistic.controllers', ['ui.bootstrap'])
              $http.get(config.base + `/StatisticController/getListBillByTypeProduct?from=${params.from_date}&to=${params.to_date}&id_type_product=${params.id_type}&customer_id=${params.customer_id}`)
              .success(function(data){
                 //  $scope.listProductType = data.productType;
-                console.log('data: ', data);
+                
                 $scope.data = data.list_bill;
                 if(data.list_bill.length > 0){
+                    const result = [];
+                    var lengthArr = data.list_bill.length;
+                    for(let i = 0; i < lengthArr; i++){
+                        data.list_bill[i].date_bill = $scope.formatDate(data.list_bill[i].date_bill);
+                        result.push(data.list_bill[i].date_bill);
+                    }
+                    var map = {};
+                    var count = result.map(function(val) {
+                        return map[val] = (typeof map[val] === "undefined") ? 1 : map[val] + 1;
+                    });
+
+                    var newArray = result.map(function(val, index) {
+                        return val + (map[val] != 1 ? ' (' + count[index] + ')' : '');
+                    });
+                    for(let i = 0; i < lengthArr; i++){
+                        data.list_bill[i].date_string = newArray[i];
+                    }
+                    console.log(data.list_bill)
                     $scope.name = data.list_bill[0].name;
                     $scope.address = data.list_bill[0].address,
                     $scope.type_name = data.list_bill[0].name_type,
@@ -267,20 +285,23 @@ angular.module('statistic.controllers', ['ui.bootstrap'])
             
         };
         $scope.printDateValid = function(date, index, arr_bill){
-            //console.log({date, index, arr_bill})
-            let count = 0;
-            for(let i = 0; i < index; i++){
-                if($scope.formatDate(arr_bill[i].bill_date) == date){
-                    count++;
-                }
-               // console.log($scope.formatDate(arr_bill[i].date_bill))
-            }
-            //return 1;
-            if(count > 0){
-                date += ` (${count + 1})`
-            }
+            // //console.log('123123')
+            // console.log({date, index, arr_bill})
+            // let count = 0;
+            // for(let i = 0; i < index; i++){
+            //     console.log({date, dateInList: arr_bill[i].date_bill})
+            //     if($scope.formatDate(arr_bill[i].date_bill) == date){
+            //         console.log('date trung: ' .date);
+            //         count++;
+            //     }
+            //    // console.log($scope.formatDate(arr_bill[i].date_bill))
+            // }
+            // //return 1;
+            // if(count > 0){
+            //     date += ` (${count + 1})`
+            // }
            
-            return date;
+            // return date;
             
         }
         $scope.numberWithCommas = function(x) {

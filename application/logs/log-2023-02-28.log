@@ -1,0 +1,4 @@
+CUSTOM - 2023-02-28 09:09:17 --> Order::addOrder - /index.php/order/addOrder: {"note":"","lstProId":[],"orders":[{"product_id":"1","cost":null,"unit":"","price":118000,"quantity":1,"total":"1"}],"total_price":118000,"customer_id":"461","saler":"1"}
+CUSTOM - 2023-02-28 09:09:29 --> Order::addOrder - /index.php/order/addOrder: {"note":"","lstProId":[],"orders":[{"product_id":"3","cost":null,"unit":"","price":118000,"quantity":1,"total":"3"}],"total_price":118000,"customer_id":"461","saler":"2"}
+CUSTOM - 2023-02-28 09:10:17 --> Order::index - /index.php/order: null
+CUSTOM - 2023-02-28 09:11:07 --> Warehouse_wholesale::saveAddWholesale - /index.php/warehouse_wholesale/saveAddWholesale: {"partner":"461","total_bill":2814240,"actual":0,"debt":null,"buy_price":[{"product_id":"169","quantity":12,"unit":"1","price":"234520"}],"warehouseid":"1"}
