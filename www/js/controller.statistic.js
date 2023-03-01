@@ -323,9 +323,9 @@ angular.module('statistic.controllers', ['ui.bootstrap'])
         $scope.detailBillByDate = function($event){
             let date_search = $($event.currentTarget).attr('id');
             var inputGetBill = localStorage.getItem('input_get_list_bill');
-            if(localStorage.getItem('input_get_list_bill') != null){
-                $scope.data = JSON.parse(localStorage.getItem('input_get_list_bil'));
-            }
+            // if(localStorage.getItem('input_get_list_bill') != null){
+            //     $scope.data = JSON.parse(localStorage.getItem('input_get_list_bil'));
+            // }
             var params = JSON.parse(inputGetBill);
             params.date_search = date_search;
             console.log('params: ', params);
